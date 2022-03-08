@@ -1,7 +1,7 @@
 :root {
-  --topbar-height: 76px;
+  --topbar-height: 48px;
 
-  @include up(1024) {
-    --topbar-height: 110px;
+  @include up(768) {
+    --topbar-height: 58px;
   }
 }

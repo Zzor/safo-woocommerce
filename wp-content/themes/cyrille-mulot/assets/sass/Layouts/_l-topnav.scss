@@ -1,11 +1,17 @@
-.l-topnav {
-  background-color: var(--color-light);
-  height: 48px;
-  @extend %--principal-grid;
-
-  @include up(768) {
-    height: 58px;
+.logged-in {
+  .l-topnav {
+    top: 32px;
   }
+}
+
+.l-topnav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: var(--topbar-height);
+  @extend %--principal-grid;
+  background-color: var(--color-light);
 
   .l-topnav__inner {
     grid-column: 2 / -2;
