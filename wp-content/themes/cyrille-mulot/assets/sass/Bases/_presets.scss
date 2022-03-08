@@ -11,7 +11,11 @@ body {
 }
 
 main {
-  padding-top: var(--topbar-height);
+  padding: var(--topbar-height) 0 var(--spacing-xxl);
+
+  @include up(720) {
+    padding: var(--topbar-height) var(--spacing-xl) var(--spacing-xxl);
+  }
 }
 
 .for-overflow-mobile {
