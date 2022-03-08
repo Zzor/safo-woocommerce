@@ -1,0 +1,16 @@
+vendor
+/wp
+/wp-config.php
+/wp-content/*
+!/wp-content/
+!/wp-content/mu-plugins/
+/wp-content/themes/*
+!/wp-content/themes/
+!/wp-content/themes/cyrille-mulot
+/wp-content/plugins/*
+!/wp-content/plugins/
+!/wp-content/plugins/reading-time-estimate
+
+node_modules
+.cache
+dist

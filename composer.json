@@ -1,0 +1,26 @@
+{
+    "name": "zzor/cyrille-mulot",
+    "authors": [
+        {
+            "name": "Zzor",
+            "email": "hugo.salazar.cardozo@gmail.com"
+        }
+    ],
+    "extra": {
+        "wordpress-install-dir": "wp"
+    },
+    "require": {
+        "johnpbloch/wordpress": "^5.9",
+        "wpackagist-plugin/advanced-custom-fields": "^5.12",
+        "wpackagist-plugin/contact-form-7": "^5.5",
+        "wpackagist-plugin/polylang": "^3.1",
+        "wpackagist-plugin/woocommerce": "^6.2"
+    },
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org",
+            "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+        }
+    ]
+}
