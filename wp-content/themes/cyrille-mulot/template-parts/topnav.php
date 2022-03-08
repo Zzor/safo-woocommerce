@@ -1,7 +1,9 @@
 <div class="l-topnav">
   <div class="l-topnav__inner">
     <div class="l-topnav__logo">
-      <img src="" alt="Logo">
+      <a href="<?php bloginfo('url'); ?>">
+        <img src="<?= THEME_IMG ?>/cyrille-mulot-logo.jpg" alt="Logo">
+      </a>
     </div>
 
     <nav class="l-topnav__principal-nav">

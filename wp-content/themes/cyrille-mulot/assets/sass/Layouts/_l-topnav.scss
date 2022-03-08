@@ -24,12 +24,16 @@
 
     .l-topnav__logo {
       height: inherit;
-      display: flex;
-      align-items: center;
 
-      img {
-        width: auto;
+      a {
         height: inherit;
+        display: flex;
+        align-items: center;
+
+        img {
+          width: auto;
+          height: 70%;
+        }
       }
     }
 
