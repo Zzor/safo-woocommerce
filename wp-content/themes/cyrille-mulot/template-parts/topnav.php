@@ -7,31 +7,15 @@
     </div>
 
     <nav class="l-topnav__principal-nav">
-      <ul>
-        <li>
-          <a href="">
-            Accueil
-          </a>
-        </li>
-
-        <li>
-          <a href="">
-            Gallerie
-          </a>
-        </li>
-
-        <li>
-          <a href="">
-            A propos
-          </a>
-        </li>
-
-        <li>
-          <a href="">
-            Contact
-          </a>
-        </li>
-      </ul>
+      <?php 
+        wp_nav_menu(
+          [
+            'theme_location' => 'principal-nav',
+            'container' => 'ul',
+            'menu_class' => 'l-nav__menu',
+          ]
+        ); 
+      ?>
     </nav>
 
     <button id="js-burger" class="l-nav__burger" aria-label="menu">
