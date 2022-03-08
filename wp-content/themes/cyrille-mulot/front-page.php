@@ -14,7 +14,7 @@
       <?php the_field('home_hero_title'); ?>
     </h1>
 
-    <a href="#link-home-description" class="p-home__hero-scroll-down">
+    <a href="#link-home-description" class="c-button-square is-colored p-home__hero-scroll-down">
       <img src="<?= THEME_IMG ?>/arrow-down.svg" alt="">
     </a>
   </header>

@@ -1,11 +1,14 @@
 .c-button-square {
   width: 40px;
   height: 40px;
-  margin: 0 var(--spacing-xs);
-  border: 1px solid var(--color-dark);
-  background-color: var(--color-medium);
+  border: 1px solid;
   box-shadow: 0 0 0 2px var(--color-light), 0 0 0 3px var(--color-dark);
   transition: all 250ms ease;
+
+  &.is-light {
+    border-color: var(--color-dark);
+    background-color: var(--color-medium);
+  }
 
   &.is-colored,
   &:hover {
