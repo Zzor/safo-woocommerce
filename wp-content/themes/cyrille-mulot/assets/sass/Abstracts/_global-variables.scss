@@ -1,7 +1,12 @@
 :root {
   --topbar-height: 48px;
+  --adminbar-height: 46px;
 
   @include up(768) {
     --topbar-height: 58px;
+  }
+
+  @include up(783) {
+    --adminbar-height: 32px;
   }
 }

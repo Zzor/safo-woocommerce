@@ -1,9 +1,16 @@
+.logged-in {
+  .p-home {
+    .p-home__hero {
+      height: calc(100vh - var(--topbar-height) - var(--adminbar-height));
+    }
+  }
+}
+
 .p-home {
   .p-home__hero {
     position: relative;
     height: calc(100vh - var(--topbar-height));
     min-height: 400px;
-
 
     .p-home__hero-picture {
       position: absolute;
