@@ -11,8 +11,7 @@
     </picture>
 
     <h1 class="p-home__hero-title">
-      Cyrille Mulot <br>
-      Photography
+      <?php the_field('home_hero_title'); ?>
     </h1>
 
     <a href="#link-home-description" class="p-home__hero-scroll-down">
@@ -22,18 +21,15 @@
 
   <section id="link-home-description" class="p-home__presentation">
     <h2>
-      Bienvenue sur le site de Cyrille Mulot Photography!
+      <?php the_field('home_presentation_title'); ?>  
     </h2>
     
     <div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam suscipit laboriosam sed ab, eligendi corporis quibusdam voluptate eius commodi, quisquam sapiente temporibus sint sunt esse magnam impedit placeat totam unde.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem at obcaecati, laboriosam cum ipsa modi ipsum voluptatem sint nulla! Et quos voluptatem veniam impedit. Facere ex deleniti quod fuga suscipit.
-      </p>
+      <?php the_field('home_presentation_description'); ?>
     </div>
 
     <p class="p-home__presentation-signature">
-      Cyrille Mulot
+      <?php the_field('home_presentation_signature'); ?>
     </p>
   </section>
 </main>
