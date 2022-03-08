@@ -9,7 +9,7 @@ vendor
 !/wp-content/themes/cyrille-mulot
 /wp-content/plugins/*
 !/wp-content/plugins/
-!/wp-content/plugins/reading-time-estimate
+!/wp-content/plugins/socials-editor
 
 node_modules
 .cache
