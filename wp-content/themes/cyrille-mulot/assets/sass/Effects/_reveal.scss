@@ -1,0 +1,10 @@
+.fx-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fx-reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 800ms cubic-bezier(0.5, 0, 0, 1);
+}
