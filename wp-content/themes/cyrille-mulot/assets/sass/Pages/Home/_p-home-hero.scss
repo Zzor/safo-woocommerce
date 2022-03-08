@@ -21,13 +21,13 @@
       }
     }
 
-    .p-home__title {
+    .p-home__hero-title {
       text-align: center;
       padding: var(--spacing-s);
       color: var(--color-primary);
     }
 
-    .p-home__scroll-down {
+    .p-home__hero-scroll-down {
       position: absolute;
       top: calc(100% - var(--spacing-l));
       left: 50%;
@@ -37,7 +37,6 @@
       color: var(--color-light);
       background-color: var(--color-primary);
       cursor: pointer;
-
       display: flex;
       align-items: center;
       justify-content: center;
