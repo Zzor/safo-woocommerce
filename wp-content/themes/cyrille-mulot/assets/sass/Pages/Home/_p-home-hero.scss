@@ -1,10 +1,9 @@
 .p-home {
-  height: calc(100vh - var(--topbar-height));
-  min-height: 400px;
-
   .p-home__hero {
-    height: 100%;
     position: relative;
+    height: calc(100vh - var(--topbar-height));
+    min-height: 400px;
+
 
     .p-home__hero-picture {
       position: absolute;
@@ -38,6 +37,10 @@
       color: var(--color-light);
       background-color: var(--color-primary);
       cursor: pointer;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
