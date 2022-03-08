@@ -1,14 +1,14 @@
   <footer class="l-footer">
     <div class="l-footer__inner">
       <div class="l-footer__follow">
-        <a href="https://www.instagram.com/cyrillemulot_photography/" target="_blank">
+        <a href="https://www.instagram.com/<?= get_option('instagram'); ?>" target="_blank">
           Suivez-moi sur instagram
         </a>
       </div>
 
       <ul class="l-footer__socials">
         <li class="c-button-square">
-          <a href="https://facebook.com/<?= get_option('facebook'); ?>" aria-label="facebook" target="_blank">
+          <a href="https://facebook.com/<?= get_option('instagram'); ?>" aria-label="facebook" target="_blank">
             <span class="text-for-seo">Facebook</span>
             <?php require get_template_directory() . '/template-parts/social-icons/icon-facebook.php'; ?>
           </a>
