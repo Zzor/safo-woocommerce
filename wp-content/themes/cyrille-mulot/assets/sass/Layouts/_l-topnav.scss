@@ -12,6 +12,7 @@
   height: var(--topbar-height);
   @extend %--principal-grid;
   background-color: var(--color-light);
+  z-index: z(navigation);
 
   .l-topnav__inner {
     grid-column: 2 / -2;
