@@ -5,20 +5,13 @@
 }
 
 body {
-  padding-top: var(--topbar-height);
   color: var(--color-dark);
-  font-family: var(--font-text);
+  font-family: var(--font-principal);
   line-height: 32px;
 }
 
 .for-overflow-mobile {
   overflow-x: hidden;
-}
-
-@for $i from 1 through 6 {
-  h#{$i} {
-    font-family: var(--font-title);
-  }
 }
 
 li {
