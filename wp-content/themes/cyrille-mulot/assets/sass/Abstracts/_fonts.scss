@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet"');
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet"');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 :root {
-  --font-principal: "IBM Plex Sans", sans-serif;
-  --font-alternative: Raleway, sans-serif;
+  --font-principal: Raleway, sans-serif;
+  --font-title: "Playfair Display", "IBM Plex Sans", sans-serif;
   --font-logo: Birthstone, sans-serif;
 }
