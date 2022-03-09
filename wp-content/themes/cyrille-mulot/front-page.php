@@ -29,17 +29,19 @@
   </header>
 
   <section id="link-home-description" class="p-home__presentation">
-    <h2>
-      <?php the_field('home_presentation_title'); ?>  
-    </h2>
-    
-    <div>
-      <?php the_field('home_presentation_description'); ?>
-    </div>
+    <div class="p-home__presentation-inner">
+      <h2>
+        <?php the_field('home_presentation_title'); ?>  
+      </h2>
+      
+      <div>
+        <?php the_field('home_presentation_description'); ?>
+      </div>
 
-    <p class="p-home__presentation-signature">
-      <?php the_field('home_presentation_signature'); ?>
-    </p>
+      <p class="p-home__presentation-signature">
+        <?php the_field('home_presentation_signature'); ?>
+      </p>
+    </div>
   </section>
 
   <section class="p-home__categories">
