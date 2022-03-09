@@ -7,15 +7,21 @@
 
   &.is-light {
     border-color: var(--color-dark);
-    background-color: var(--color-medium);
+    background-color: var(--color-dark-medium);
   }
 
   &.is-colored,
   &:hover {
     color: var(--color-dark);
-    background-color: var(--color-primary);
-    border-color: var(--color-primary);
-    box-shadow: 0 0 0 2px var(--color-light), 0 0 0 3px var(--color-primary);
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+    box-shadow: 0 0 0 2px var(--color-light), 0 0 0 3px var(--color-primary-dark);
+  }
+
+  &.is-colored:hover {
+    background-color: var(--color-primary-light);
+    border-color: var(--color-primary-light);
+    
   }
 
   a {

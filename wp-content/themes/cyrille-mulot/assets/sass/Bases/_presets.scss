@@ -1,7 +1,7 @@
 *::-moz-selection,
 *::selection {
   color: var(--color-dark);
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-dark);
 }
 
 html {
@@ -12,6 +12,7 @@ body {
   color: var(--color-dark);
   font-family: var(--font-principal);
   line-height: 32px;
+  background-color: var(--color-light);
 }
 
 main {
