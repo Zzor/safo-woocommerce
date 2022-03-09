@@ -7,11 +7,10 @@
 
     .p-home__categories-inner {
       grid-column: 2 / -2;
-      border: 1px solid lime;
 
       .p-home__categories-header {
         h2 {
-          @extend %c-title-section;
+          @extend %c-title-section-2;
         }
     
         p {
