@@ -11,7 +11,7 @@
               [
                 'theme_location' => 'principal-nav',
                 'container' => 'ul',
-                'menu_class' => 'l-nav__menu',
+                'menu_class' => 'l-footer__block-list',
               ]
             ); 
           ?>
@@ -20,7 +20,7 @@
         <div class="l-footer__block">
           <h2 class="l-footer__block-title">Contact</h2>
 
-          <ul>
+          <ul class="l-footer__block-list">
             <li>
               <a href="mailto:<?= get_option('email'); ?>">
                 <?= get_option('email'); ?>
@@ -44,7 +44,7 @@
             Suivez-moi !
           </h2>
 
-          <ul class="l-footer__block-socials">
+          <ul class="l-footer__block-list is-socials">
             <li class="c-button-square">
               <a href="https://facebook.com/<?= get_option('instagram'); ?>" aria-label="facebook" target="_blank">
                 <span class="text-for-seo">Facebook</span>
