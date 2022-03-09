@@ -9,9 +9,7 @@
     }
 
     h2 {
-      font-size: 26px;
-      line-height: 39px;
-      font-weight: 300;
+      @extend %c-title-section-2;
     }
 
     div {
