@@ -22,23 +22,19 @@
 
           <ul>
             <li>
-              <a href="mailto:contact@cyrillemulot.com">
-                contact@cyrillemulot.com
+              <a href="mailto:<?= get_option('email'); ?>">
+                <?= get_option('email'); ?>
               </a>
             </li>
 
             <li>
-              <a href="telto:+33630249995">
-                +336 30 24 99 95
+              <a href="telto:<?= get_option('phone'); ?>">
+                <?= get_option('phone'); ?>
               </a>
             </li>
 
             <li>
-              <div>
-                24 rue Gemare  <br>
-                Caen, 14000 <br>
-                France
-              </div>
+              <?= get_option('address'); ?>
             </li>
           </ul>
         </div>
