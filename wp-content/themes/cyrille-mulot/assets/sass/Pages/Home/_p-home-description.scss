@@ -2,7 +2,7 @@
   .p-home__presentation {
     text-align: center;
     margin: 0 auto;
-    padding: var(--spacing-xxl-2) var(--spacing-xl);
+    padding: var(--spacing-xxl-2) var(--spacing-xl) 0;
 
     @include up(1024) {
       width: 50%;

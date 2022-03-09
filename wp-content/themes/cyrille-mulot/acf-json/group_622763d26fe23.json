@@ -119,8 +119,8 @@
             "key": "field_622787bb50e2a",
             "label": "Description",
             "name": "home_presentation_description",
-            "type": "wysiwyg",
-            "instructions": "",
+            "type": "textarea",
+            "instructions": "Les sauts de ligne sont pris en compte",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -129,10 +129,10 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
         },
         {
             "key": "field_622787cd50e2b",
@@ -197,7 +197,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "33.3",
+                "width": "25",
                 "class": "",
                 "id": ""
             },
@@ -212,7 +212,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "25",
+                        "width": "",
                         "class": "",
                         "id": ""
                     },
@@ -272,7 +272,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "33.3",
+                "width": "25",
                 "class": "",
                 "id": ""
             },
@@ -287,7 +287,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "25",
+                        "width": "",
                         "class": "",
                         "id": ""
                     },
@@ -347,7 +347,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "33.3",
+                "width": "25",
                 "class": "",
                 "id": ""
             },
@@ -362,7 +362,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "25",
+                        "width": "",
                         "class": "",
                         "id": ""
                     },
@@ -412,6 +412,81 @@
                     "return_format": "array"
                 }
             ]
+        },
+        {
+            "key": "field_62292b69a4ea4",
+            "label": "Photo 4",
+            "name": "home_categories_photo_4",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_62292b69a4ea5",
+                    "label": "Photo",
+                    "name": "photo",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "full",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_62292b69a4ea6",
+                    "label": "Titre",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62292b69a4ea7",
+                    "label": "Lien",
+                    "name": "link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
+            ]
         }
     ],
     "location": [
@@ -446,5 +521,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1646844405
+    "modified": 1646865387
 }
