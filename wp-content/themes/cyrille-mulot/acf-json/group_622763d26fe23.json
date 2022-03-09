@@ -46,20 +46,39 @@
             "key": "field_62278892abb57",
             "label": "Titre",
             "name": "home_hero_title",
-            "type": "textarea",
-            "instructions": "Les saut de ligne sont pris en compte",
+            "type": "text",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "70",
+                "width": "",
                 "class": "",
                 "id": ""
             },
             "default_value": "",
             "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": "br"
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6228bc28da64d",
+            "label": "Sous-titre",
+            "name": "home_hero_subtitle",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_622787a750e28",
@@ -167,5 +186,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1646758158
+    "modified": 1646836851
 }

@@ -10,9 +10,17 @@
       <?php endif; ?>
     </picture>
 
-    <h1 class="p-home__hero-title">
-      <?php the_field('home_hero_title'); ?>
-    </h1>
+    <div class="p-home__hero-title-wrapper">
+      <h1 class="p-home__hero-title">
+        <?php the_field('home_hero_title'); ?>
+      </h1>
+
+      <p class="p-home__hero-subtitle">
+        <?php the_field('home_hero_subtitle'); ?>
+      </p>
+    </div>
+
+    
 
     <a href="#link-home-description" class="c-button-square is-colored p-home__hero-scroll-down">
       <img src="<?= THEME_IMG ?>/arrow-down.svg" alt="">
