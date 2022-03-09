@@ -6,8 +6,11 @@
       <?php $home_hero_image = get_field('home_hero_image'); ?>
       <?php if($home_hero_image) : ?>
         <img src="<?= esc_url($home_hero_image['url']); ?>" 
-            alt="<?= esc_attr($home_hero_image['alt']); ?>" />
+            alt="<?= esc_attr($home_hero_image['alt']); ?>" 
+            class="p-home__hero-img" />
       <?php endif; ?>
+
+      <div class="p-home__hero-picture-shade"></div>
     </picture>
 
     <div class="p-home__hero-title-wrapper">
@@ -19,8 +22,6 @@
         <?php the_field('home_hero_subtitle'); ?>
       </p>
     </div>
-
-    
 
     <a href="#link-home-description" class="c-button-square is-colored p-home__hero-scroll-down">
       <img src="<?= THEME_IMG ?>/arrow-down.svg" alt="">
