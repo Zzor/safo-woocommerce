@@ -15,7 +15,7 @@ function socialsEditor() {
   function renderSocialsEditor() {
     if(isset($_POST['socials_update'])) {
       if(!wp_verify_nonce($_POST['socialsEditor_noncename'], 'socialsEditor')) {
-        die('Token inválido');
+        die('Token non valide');
       }
 
       foreach($_POST['options'] as $name => $value) {

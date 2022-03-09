@@ -1,10 +1,20 @@
-%--title-section {
+%_title-common {
   margin: 50px 0 10px;
-  line-height: 39px;
-  font-size: 40px;
   font-weight: 500;
   font-family: var(--font-title);
+  text-transform: uppercase;
+}
+
+%c-title-section-2 {
+  @extend %_title-common;
+  font-size: 40px;
   line-height: 44px;
   letter-spacing: 2.7px;
-  text-transform: uppercase;
+}
+
+%c-title-section-3 {
+  @extend %_title-common;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 1.3px;
 }
