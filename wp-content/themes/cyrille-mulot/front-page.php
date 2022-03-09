@@ -6,7 +6,8 @@
       <?php $home_hero_image = get_field('home_hero_image'); ?>
       <?php if($home_hero_image) : ?>
         <img src="<?= esc_url($home_hero_image['url']); ?>" 
-            alt="<?= esc_attr($home_hero_image['alt']); ?>" />
+            alt="<?= esc_attr($home_hero_image['alt']); ?>" 
+            class="p-home__hero-img" />
       <?php endif; ?>
     </picture>
 

@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--topbar-height) + var(--adminbar-height) + var(--spacing-xxl-2));
 }
 
 body {
