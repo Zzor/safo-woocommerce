@@ -56,19 +56,23 @@
         <?php if(have_rows('home_categories_photo_1')) : ?>
           <?php while(have_rows('home_categories_photo_1')) : the_row(); ?>
             <li>
-              <a href="<?= get_sub_field('link'); ?>">
-                  <?php $photo = get_sub_field('photo'); ?>
-                  <?php if($photo) : ?>
-                    <figure>
-                      <img src="<?= esc_url($photo['url']); ?>" 
-                          alt="<?= esc_attr($photo['alt']); ?>" />
+              <?php $link = get_sub_field('link'); ?>
+              <?php if ($link) : ?>
+                <a href="<?= esc_url($link['url']); ?>" 
+                   target="<?= esc_attr($link['target']); ?>">
+                    <?php $photo = get_sub_field('photo'); ?>
+                    <?php if($photo) : ?>
+                      <figure>
+                        <img src="<?= esc_url($photo['url']); ?>" 
+                            alt="<?= esc_attr($photo['alt']); ?>" />
 
-                      <figcaption>
-                        <?php the_sub_field('title'); ?>
-                      </figcaption>
-                    </figure>
-                  <?php endif; ?>
-              </a>
+                        <figcaption>
+                          <?php the_sub_field('title'); ?>
+                        </figcaption>
+                      </figure>
+                    <?php endif; ?>
+                </a>
+              <?php endif; ?>
             </li>
           <?php endwhile; ?>
         <?php endif; ?>
@@ -76,7 +80,10 @@
         <?php if(have_rows('home_categories_photo_2')) : ?>
           <?php while(have_rows('home_categories_photo_2')) : the_row(); ?>
             <li>
-              <a href="<?= get_sub_field('link'); ?>">
+              <?php $link = get_sub_field('link'); ?>
+              <?php if ($link) : ?>
+                <a href="<?= esc_url($link['url']); ?>" 
+                   target="<?= esc_attr($link['target']); ?>">
                   <?php $photo = get_sub_field('photo'); ?>
                   <?php if($photo) : ?>
                     <figure>
@@ -88,7 +95,8 @@
                       </figcaption>
                     </figure>
                   <?php endif; ?>
-              </a>
+                </a>
+              <?php endif; ?>
             </li>
           <?php endwhile; ?>
         <?php endif; ?>
@@ -96,7 +104,10 @@
         <?php if(have_rows('home_categories_photo_3')) : ?>
           <?php while(have_rows('home_categories_photo_3')) : the_row(); ?>
             <li>
-              <a href="<?= get_sub_field('link'); ?>">
+              <?php $link = get_sub_field('link'); ?>
+              <?php if($link): ?>
+                <a href="<?= esc_url($link['url']); ?>" 
+                   target="<?= esc_attr($link['target']); ?>">
                   <?php $photo = get_sub_field('photo'); ?>
                   <?php if($photo) : ?>
                     <figure>
@@ -108,7 +119,8 @@
                       </figcaption>
                     </figure>
                   <?php endif; ?>
-              </a>
+                </a>
+              <?php endif; ?>
             </li>
           <?php endwhile; ?>
         <?php endif; ?>
@@ -116,7 +128,10 @@
         <?php if(have_rows('home_categories_photo_4')) : ?>
           <?php while(have_rows('home_categories_photo_4')) : the_row(); ?>
             <li>
-              <a href="<?= get_sub_field('link'); ?>">
+              <?php $link = get_sub_field('link'); ?>
+              <?php if($link): ?>
+                <a href="<?= esc_url($link['url']); ?>" 
+                   target="<?= esc_attr($link['target']); ?>">
                   <?php $photo = get_sub_field('photo'); ?>
                   <?php if($photo) : ?>
                     <figure>
@@ -128,7 +143,8 @@
                       </figcaption>
                     </figure>
                   <?php endif; ?>
-              </a>
+                </a>
+              <?php endif; ?>
             </li>
           <?php endwhile; ?>
         <?php endif; ?>
