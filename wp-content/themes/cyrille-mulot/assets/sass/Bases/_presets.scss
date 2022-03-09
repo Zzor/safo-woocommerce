@@ -4,11 +4,6 @@
   background-color: var(--color-primary-dark);
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--topbar-height) + var(--adminbar-height) + var(--spacing-xxl-2));
-}
-
 body {
   color: var(--color-dark);
   font-family: var(--font-principal);
@@ -23,8 +18,6 @@ main {
     padding: var(--topbar-height) var(--spacing-xl) var(--spacing-xxl);
   }
 }
-
-
 
 .for-overflow-mobile {
   overflow-x: hidden;
