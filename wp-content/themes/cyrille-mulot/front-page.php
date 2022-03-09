@@ -46,7 +46,7 @@
 
   <section class="p-home__categories">
     <div class="p-home__categories-inner">
-      <header class="p-home__categories-header">
+      <header class="text-for-seo">
         <h2>
           <?php the_field('home_categories_title'); ?>  
         </h2>
