@@ -6,6 +6,7 @@ function cyrilleMulotMenus() {
   register_nav_menus(
     [
       'principal-nav' => __('Menu principal'),
+      'languages-nav' => __('Menu Langues'),
     ]
   );
 }
