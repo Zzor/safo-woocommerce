@@ -31,7 +31,7 @@ get_header();
         </div>
       </div>
 
-      <div class="c-form is-visible" id="js-service-form">
+      <div class="c-form" id="js-service-form">
         <div class="c-form__description">
           <?php the_field('contact_form_service_description'); ?>
         </div>

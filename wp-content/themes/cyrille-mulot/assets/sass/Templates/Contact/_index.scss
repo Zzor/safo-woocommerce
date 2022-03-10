@@ -18,5 +18,17 @@
         cursor: pointer;
       }
     }
+
+    .t-contact__form-wrapper {
+      margin: 0 auto;
+
+      @include up(767) {
+        max-width: 70%;
+      }
+
+      @include up(1280) {
+        max-width: 60%;
+      }
+    }
   }
 }
