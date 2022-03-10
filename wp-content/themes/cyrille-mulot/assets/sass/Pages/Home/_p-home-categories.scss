@@ -1,11 +1,11 @@
 .p-home {
   .p-home__categories {
     @extend %--principal-grid;
-    padding: var(--spacing-xxl-2) var(--spacing-xl);
     text-align: center;
 
     .p-home__categories-inner {
       grid-column: 2 / -2;
+      @extend %--is-constrain-section;
 
       .p-home__categories-header {
         h2 {

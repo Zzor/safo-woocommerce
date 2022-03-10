@@ -11,14 +11,6 @@ body {
   background-color: var(--color-light);
 }
 
-main {
-  padding: var(--topbar-height) 0 var(--spacing-xxl);
-
-  @include up(720) {
-    padding: var(--topbar-height) var(--spacing-xl) var(--spacing-xxl);
-  }
-}
-
 .for-overflow-mobile {
   overflow-x: hidden;
 }
