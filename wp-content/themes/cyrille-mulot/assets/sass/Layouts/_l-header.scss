@@ -8,7 +8,7 @@
 
 .l-header {
   @extend %--principal-grid;
-  margin-top: var(--topbar-height);
+  margin: var(--topbar-height) 0 var(--spacing-xxl-2);
   min-height: 400px;
   overflow: hidden;
 

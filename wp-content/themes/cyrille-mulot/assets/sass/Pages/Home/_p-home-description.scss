@@ -2,7 +2,6 @@
   .p-home__presentation {
     @extend %--principal-grid;
     margin: 0 auto;
-    padding: var(--spacing-xxl-2) 0 0;
     text-align: center;
 
     @include up(1024) {
