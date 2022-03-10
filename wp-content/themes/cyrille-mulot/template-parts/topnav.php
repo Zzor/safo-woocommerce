@@ -12,7 +12,7 @@
           [
             'theme_location' => 'principal-nav',
             'container' => 'ul',
-            'menu_class' => 'l-nav__menu',
+            'menu_class' => 'l-topnav__principal-nav-items',
           ]
         ); 
       ?>

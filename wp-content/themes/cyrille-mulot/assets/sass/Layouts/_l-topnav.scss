@@ -38,14 +38,16 @@
     }
 
     .l-topnav__principal-nav {
-      height: inherit;
+      height: 70%;
+      display: flex;
+      align-items: center;
 
       @include down(1023) {
         display: none;
       }
 
-      ul {
-        height: inherit;
+      .l-topnav__principal-nav-items {
+        height: 100%;
         display: flex;
         align-items: center;
 
