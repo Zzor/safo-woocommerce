@@ -13,17 +13,16 @@
     .p-home__hero-inner {
       grid-column: 1 / -1;
       @extend %--is-constrain-section;
-
-      @include up(767) {
-        grid-column: 2 / -2;
-      }
-
       position: relative;
       height: calc(100vh - var(--topbar-height));
       display: flex;
       align-items: center;
       min-height: 400px;
       overflow: hidden;
+
+      @include up(767) {
+        grid-column: 2 / -2;
+      }
 
       .p-home__hero-picture {
         position: absolute;
