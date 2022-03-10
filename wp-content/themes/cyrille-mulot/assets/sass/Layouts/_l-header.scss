@@ -1,3 +1,11 @@
+.logged-in {
+  .l-header {
+    &.is-home {
+      height: calc(100vh - var(--topbar-height) - var(--adminbar-height));
+    }
+  }
+}
+
 .l-header {
   @extend %--principal-grid;
   margin-top: var(--topbar-height);
