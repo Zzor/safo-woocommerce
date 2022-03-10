@@ -23,13 +23,17 @@
 
     <?php get_template_part('template-parts/topnav'); ?>
 
-    <header class="l-header-generic">
-      <div class="l-header-generic__inner">
-        <figure>
-          <img src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/angelo-lacancellera-471042-unsplash.jpg" alt="">
+    <header class="l-header is-generic">
+      <div class="l-header__inner">
+        <figure class="l-header__picture">
+          <img src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/angelo-lacancellera-471042-unsplash.jpg" 
+               alt=""
+               class="l-header__img">
+
+          <div class="l-header__picture-shade"></div>
         </figure>
 
-        <div class="c-title-page">
+        <div class="c-title-page l-header__title">
           <h1 class="c-title-page__principal fx-reveal">
            <?php the_title(); ?>
           </h1>

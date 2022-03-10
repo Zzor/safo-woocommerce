@@ -5,8 +5,8 @@
       var Num2mod = Num2 + 1;
       var Num3 = $(window).scrollTop() * .2; // Title speed
       var Num3mod = Num3 * 3;
-      return $('.p-home__hero-picture-shade').css('opacity', Num),
-      $(".p-home__hero-img").css({"transform":"scale(" + Num2mod + ")"}),
-      $(".p-home__hero-title-wrapper").css({"margin-top":"+" + Num3mod + "px"});
+      return $('.l-header__picture-shade').css('opacity', Num),
+      $(".l-header__img").css({"transform":"scale(" + Num2mod + ")"}),
+      $(".l-header__title").css({"margin-top":"+" + Num3mod + "px"});
   });
 }.call(this));

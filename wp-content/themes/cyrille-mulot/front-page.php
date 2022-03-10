@@ -1,35 +1,6 @@
 <?php get_header('home'); ?>
 
 <main class="p-home">
-  <header class="p-home__hero">
-    <div class="p-home__hero-inner">
-      <picture class="p-home__hero-picture">
-        <?php $home_hero_image = get_field('home_hero_image'); ?>
-        <?php if($home_hero_image) : ?>
-          <img src="<?= esc_url($home_hero_image['url']); ?>" 
-              alt="<?= esc_attr($home_hero_image['alt']); ?>" 
-              class="p-home__hero-img" />
-        <?php endif; ?>
-
-        <div class="p-home__hero-picture-shade"></div>
-      </picture>
-
-      <div class="c-title-page--home">
-        <h1 class="c-title-page__principal fx-reveal">
-          <?php the_field('home_hero_title'); ?>
-        </h1>
-
-        <p class="c-title-page__secondary fx-reveal">
-          <?php the_field('home_hero_subtitle'); ?>
-        </p>
-      </div>
-
-      <a href="#link-home-description" class="c-button-square is-colored p-home__hero-scroll-down">
-        <img src="<?= THEME_IMG ?>/arrow-down.svg" alt="">
-      </a>
-    </div>
-  </header>
-
   <section id="link-home-description" class="p-home__presentation fx-reveal">
     <div class="p-home__presentation-inner">
       <h2>
