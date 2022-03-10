@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('home'); ?>
 
 <main class="p-home">
   <header class="p-home__hero">
@@ -14,12 +14,12 @@
         <div class="p-home__hero-picture-shade"></div>
       </picture>
 
-      <div class="p-home__hero-title-wrapper">
-        <h1 class="p-home__hero-title fx-reveal">
+      <div class="c-title-page">
+        <h1 class="c-title-page__principal fx-reveal">
           <?php the_field('home_hero_title'); ?>
         </h1>
 
-        <p class="p-home__hero-subtitle fx-reveal">
+        <p class="c-title-page__secondary fx-reveal">
           <?php the_field('home_hero_subtitle'); ?>
         </p>
       </div>

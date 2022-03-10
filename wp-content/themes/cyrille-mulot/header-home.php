@@ -22,17 +22,3 @@
     <div class="for-overflow-mobile">
 
     <?php get_template_part('template-parts/topnav'); ?>
-
-    <header class="l-header-generic">
-      <div class="l-header-generic__inner">
-        <figure>
-          <img src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/angelo-lacancellera-471042-unsplash.jpg" alt="">
-        </figure>
-
-        <div class="c-title-page">
-          <h1 class="c-title-page__principal fx-reveal">
-           <?php the_title(); ?>
-          </h1>
-        </div>
-      </div>
-    </header>
