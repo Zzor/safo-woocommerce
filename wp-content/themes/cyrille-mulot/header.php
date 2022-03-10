@@ -35,7 +35,15 @@
 
         <div class="c-title-page l-header__title">
           <h1 class="c-title-page__principal fx-reveal">
-           <?php the_title(); ?>
+            <?php if(is_woocommerce()) : ?>
+              <?php if(THEME_FR) : ?>
+                Boutique
+              <?php else : ?>
+                Shop
+              <?php endif; ?>
+            <?php else : ?>
+              <?php single_post_title() ?>
+            <?php endif; ?>
           </h1>
         </div>
       </div>
