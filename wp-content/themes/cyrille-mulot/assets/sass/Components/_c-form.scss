@@ -77,5 +77,16 @@
         }
       }
     }
+
+    .cf-form__footer {
+      display: flex;
+      justify-content: center;
+
+      input[type=submit].wpcf7-submit {
+        @extend .c-button-square, .is-colored;
+        padding: 0 var(--spacing-l);
+        cursor: pointer;
+      }
+    }
   }
 }
