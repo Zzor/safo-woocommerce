@@ -38,6 +38,44 @@
             "maxlength": ""
         },
         {
+            "key": "field_622a12b9b5cdd",
+            "label": "Description",
+            "name": "contact_form_info_description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_622a14f243267",
+            "label": "Formulaire",
+            "name": "contact_form_info",
+            "type": "wysiwyg",
+            "instructions": "Renseigner ici le shortcode que vous trouverez dans l'onglet Contact. (ne pas écrire de contenu autre qu'un shortcode provenant de Contact Form)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
             "key": "field_622a0f4b609e9",
             "label": "Formulaire services",
             "name": "",
@@ -71,6 +109,44 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_622a12e2b5cde",
+            "label": "Description",
+            "name": "contact_form_service_description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_622a153743268",
+            "label": "Formulaire",
+            "name": "contact_form_service",
+            "type": "wysiwyg",
+            "instructions": "Renseigner ici le shortcode que vous trouverez dans l'onglet Contact. (ne pas écrire de contenu autre qu'un shortcode provenant de Contact Form)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -105,5 +181,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1646923711
+    "modified": 1646925144
 }

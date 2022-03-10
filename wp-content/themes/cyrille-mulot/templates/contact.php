@@ -19,6 +19,28 @@ get_header();
         </span>
       </button>
     </div>
+
+    <div class="t-contact__form-wrapper">
+      <div class="c-form is-visible" id="js-info-form">
+        <div class="c-form__description">
+          <?php the_field('contact_form_info_description'); ?>
+        </div>
+
+        <div>
+          <?php the_field('contact_form_info'); ?>
+        </div>
+      </div>
+
+      <div class="c-form is-visible" id="js-service-form">
+        <div class="c-form__description">
+          <?php the_field('contact_form_service_description'); ?>
+        </div>
+
+        <div>
+          <?php the_field('contact_form_service'); ?>
+        </div>
+      </div>
+    </div>
   </section>
 </main>
 
