@@ -14,7 +14,7 @@
         <div class="p-home__hero-picture-shade"></div>
       </picture>
 
-      <div class="c-title-page">
+      <div class="c-title-page--home">
         <h1 class="c-title-page__principal fx-reveal">
           <?php the_field('home_hero_title'); ?>
         </h1>
