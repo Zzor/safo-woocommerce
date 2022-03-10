@@ -1,5 +1,6 @@
 .l-footer {
   @extend %--principal-grid;
+  margin-top: var(--spacing-xxl-2);
   background-color: var(--color-light-medium);
 
   .l-footer__inner {
