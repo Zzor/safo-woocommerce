@@ -15,11 +15,11 @@
       </picture>
 
       <div class="p-home__hero-title-wrapper">
-        <h1 class="p-home__hero-title">
+        <h1 class="p-home__hero-title fx-reveal">
           <?php the_field('home_hero_title'); ?>
         </h1>
 
-        <p class="p-home__hero-subtitle">
+        <p class="p-home__hero-subtitle fx-reveal">
           <?php the_field('home_hero_subtitle'); ?>
         </p>
       </div>
@@ -30,7 +30,7 @@
     </div>
   </header>
 
-  <section id="link-home-description" class="p-home__presentation">
+  <section id="link-home-description" class="p-home__presentation fx-reveal">
     <div class="p-home__presentation-inner">
       <h2>
         <?php the_field('home_presentation_title'); ?>  
@@ -57,7 +57,7 @@
       <ul>
         <?php if(have_rows('home_categories_photo_1')) : ?>
           <?php while(have_rows('home_categories_photo_1')) : the_row(); ?>
-            <li>
+            <li class="fx-reveal">
               <?php $link = get_sub_field('link'); ?>
               <?php if ($link) : ?>
                 <a href="<?= esc_url($link['url']); ?>" 
@@ -81,7 +81,7 @@
 
         <?php if(have_rows('home_categories_photo_2')) : ?>
           <?php while(have_rows('home_categories_photo_2')) : the_row(); ?>
-            <li>
+            <li class="fx-reveal">
               <?php $link = get_sub_field('link'); ?>
               <?php if ($link) : ?>
                 <a href="<?= esc_url($link['url']); ?>" 
@@ -105,7 +105,7 @@
 
         <?php if(have_rows('home_categories_photo_3')) : ?>
           <?php while(have_rows('home_categories_photo_3')) : the_row(); ?>
-            <li>
+            <li class="fx-reveal">
               <?php $link = get_sub_field('link'); ?>
               <?php if($link): ?>
                 <a href="<?= esc_url($link['url']); ?>" 
@@ -129,7 +129,7 @@
 
         <?php if(have_rows('home_categories_photo_4')) : ?>
           <?php while(have_rows('home_categories_photo_4')) : the_row(); ?>
-            <li>
+            <li class="fx-reveal">
               <?php $link = get_sub_field('link'); ?>
               <?php if($link): ?>
                 <a href="<?= esc_url($link['url']); ?>" 

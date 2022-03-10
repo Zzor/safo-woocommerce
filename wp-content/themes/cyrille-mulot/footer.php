@@ -1,7 +1,7 @@
   <footer class="l-footer">
     <div class="l-footer__inner">
       <div class="l-footer__top">
-        <div class="l-footer__block">
+        <div class="l-footer__block fx-reveal">
           <h2 class="l-footer__block-title">
             Menu
           </h2>
@@ -17,7 +17,7 @@
           ?>
         </div>
 
-        <div class="l-footer__block">
+        <div class="l-footer__block fx-reveal">
           <h2 class="l-footer__block-title">Contact</h2>
 
           <ul class="l-footer__block-list">
@@ -39,7 +39,7 @@
           </ul>
         </div>
 
-        <div class="l-footer__block">
+        <div class="l-footer__block fx-reveal">
           <h2 class="l-footer__block-title">
             Suivez-moi !
           </h2>
@@ -60,7 +60,6 @@
             </li>
           </ul>
         </div>
-        
       </div>
 
       <div class="l-footer__bottom">
