@@ -20,6 +20,22 @@
         <div class="l-footer__block fx-reveal">
           <h2 class="l-footer__block-title">Contact</h2>
 
+          <ul class="l-footer__block-list is-socials">
+            <li class="c-button-square">
+              <a href="https://facebook.com/<?= get_option('instagram'); ?>" aria-label="facebook" target="_blank">
+                <span class="text-for-seo">Facebook</span>
+                <?php require get_template_directory() . '/template-parts/social-icons/icon-facebook.php'; ?>
+              </a>
+            </li>
+
+            <li class="c-button-square">
+              <a href="https://instagram.com/<?= get_option('instagram'); ?>" aria-label="instagram" target="_blank">
+                <span class="text-for-seo">instagram</span>
+                <?php require get_template_directory() . '/template-parts/social-icons/icon-instagram.php'; ?>
+              </a>
+            </li>
+          </ul>
+
           <ul class="l-footer__block-list">
             <li>
               <a href="mailto:<?= get_option('email'); ?>">
@@ -41,24 +57,18 @@
 
         <div class="l-footer__block fx-reveal">
           <h2 class="l-footer__block-title">
-            Suivez-moi !
+            Informations
           </h2>
 
-          <ul class="l-footer__block-list is-socials">
-            <li class="c-button-square">
-              <a href="https://facebook.com/<?= get_option('instagram'); ?>" aria-label="facebook" target="_blank">
-                <span class="text-for-seo">Facebook</span>
-                <?php require get_template_directory() . '/template-parts/social-icons/icon-facebook.php'; ?>
-              </a>
-            </li>
-
-            <li class="c-button-square">
-              <a href="https://instagram.com/<?= get_option('instagram'); ?>" aria-label="instagram" target="_blank">
-                <span class="text-for-seo">instagram</span>
-                <?php require get_template_directory() . '/template-parts/social-icons/icon-instagram.php'; ?>
-              </a>
-            </li>
-          </ul>
+          <?php 
+            wp_nav_menu(
+              [
+                'theme_location' => 'infos-nav',
+                'container' => 'ul',
+                'menu_class' => 'l-footer__block-list',
+              ]
+            ); 
+          ?>
         </div>
       </div>
 
