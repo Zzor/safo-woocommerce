@@ -1,4 +1,4 @@
-var $heroButtonScrollDown = $('.p-home__hero-scroll-down');
+var $heroButtonScrollDown = $('.l-header__scroll-down');
 
  // Arrow Scroll down animation
  $heroButtonScrollDown.click(function(e){
