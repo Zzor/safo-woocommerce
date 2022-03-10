@@ -1,14 +1,22 @@
 .p-home {
   .p-home__presentation {
-    text-align: center;
+    @extend %--principal-grid;
     margin: 0 auto;
-    padding: var(--spacing-xxl-2) var(--spacing-xl) 0;
+    padding: var(--spacing-xxl-2) 0 0;
+    text-align: center;
 
     @include up(1024) {
+      width: 75%;
+    }
+
+    @include up(1280) {
       width: 50%;
     }
 
     .p-home__presentation-inner {
+      grid-column: 2 / -2; 
+      @extend %--is-constrain-section;
+
       h2 {
         @extend %c-title-section-2;
       }
