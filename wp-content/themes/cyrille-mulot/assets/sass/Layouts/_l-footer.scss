@@ -92,10 +92,8 @@
             }
 
             &.current_page_item {
-              font-size: 16px;
-
               a {
-                text-decoration: underline;
+                text-decoration: none;
               }
             }
           }
