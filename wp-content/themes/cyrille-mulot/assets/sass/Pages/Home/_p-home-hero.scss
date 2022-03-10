@@ -12,7 +12,6 @@
 
     .p-home__hero-inner {
       grid-column: 1 / -1;
-      @extend %--is-constrain-section;
       position: relative;
       height: calc(100vh - var(--topbar-height));
       display: flex;
