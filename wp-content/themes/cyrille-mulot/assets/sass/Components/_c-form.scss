@@ -46,10 +46,6 @@
         height: 51px;
         border: 0;
         border-bottom: 1px solid var(--color-dark-medium);
-
-        &::placeholder {
-         opacity: .8;
-        }
       }
 
       textarea {
@@ -62,53 +58,10 @@
       }
     }
 
-/*
-    label {
-      position: relative;
-      display: flex;
-      align-items: center;
-      height: 42px;
-
-      &:focus {
-        border: 1px solid red;
-      }
-
-      span {
-        height: 100%;
-        width: 100%;
-        cursor: auto;
-
-        &:first-child {
-          position: absolute;
-          top: 0;
-          left: 0;
-          align-items: center;
-          pointer-events: none;
-          opacity: .7;
-          z-index: 1;
-        }
-
-        input[type=text],
-        input[type=email],
-        textarea {
-          display: block;
-          height: 100%;
-          width: 100%;
-          border: 0;
-          border-bottom: 1px solid var(--color-dark-medium);
-          cursor: auto;
-          transition: all 250ms ease;
-          outline: 0;
-
-          &:focus {
-            border-color: var(--color-primary-light);
-          }
-        }
-      }
-    }
-*/
     .cf-form__footer {
       display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
 
       input[type=submit].wpcf7-submit {
