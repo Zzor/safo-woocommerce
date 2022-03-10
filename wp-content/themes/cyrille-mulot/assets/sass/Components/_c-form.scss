@@ -15,11 +15,12 @@
 
   .c-form__description {
     max-width: 700px;
+    padding: var(--spacing-s);
     margin: 0 auto var(--spacing-l);
     text-align: center;
     color: var(--color-dark-medium);
     line-height: 32px;
-    background-color: var(--color-light-medium);
+    border: 1px solid var(--color-primary-dark);
   }
 
   // WP Contact Form 7 classes
