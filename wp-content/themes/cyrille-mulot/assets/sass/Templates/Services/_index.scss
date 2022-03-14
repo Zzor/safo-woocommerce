@@ -7,45 +7,74 @@
 
     ul {
       display: grid;
-      grid-template-columns: 1fr 2fr;
-      grid-gap: var(--spacing-l);
+      grid-template-columns: 1fr;
+      grid-gap: var(--spacing-xl);
+
+      @include up(768) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include up(1024) {
+        grid-template-columns: 1fr 2fr;
+      }
 
       li {
         display: grid;
-        grid-gap: var(--spacing-l);
-      }
-    }
 
-    .text-wrap {
-      padding: var(--spacing-xxl-2);
-      color: var(--color-dark-medium);
-      text-align: center;
-      background-color: var(--color-light-medium);
+        @include up(768) {
+          grid-gap: var(--spacing-xl);
+        }
 
-      .title {
-        margin: 0 0 var(--spacing-xl);
-        font-size: 26px;
-        font-family: var(--font-title);
-      }
+        .img-wrap {
+          position: relative;
+          overflow: hidden;
+          min-height: 300px;
+    
+          img {
+            display: block;
+            width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
 
-      .subtitle {
-        margin-bottom: var(--spacing-l);
-        font-size: 18px;
-        opacity: .8;
-      }
-    }
+        .text-wrap {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: var(--spacing-l);
+          color: var(--color-dark-medium);
+          background-color: var(--color-light-medium);
+    
+          @include up(768) {
+            padding: var(--spacing-xxl-2);
+          }
+    
+          .title {
+            margin: 0 0 var(--spacing-xl);
+            font-size: 26px;
+            font-family: var(--font-title);
+          }
+    
+          .subtitle {
+            margin-bottom: var(--spacing-l);
+            font-size: 18px;
+            opacity: .8;
+          }
+        }
 
-    .img-wrap {
-      position: relative;
-      overflow: hidden;
-      min-height: 300px;
+        @include down(768) {
+          .img-wrap {
+            grid-row: 1;
+          }
 
-      img {
-        display: block;
-        width: 100%;
-        min-height: 100%;
-        object-fit: cover;
-        object-position: center;
+          .text-wrap {
+            grid-row: 2;
+          }
+        }
       }
     }
   }

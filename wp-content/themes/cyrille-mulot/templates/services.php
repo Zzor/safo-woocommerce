@@ -12,39 +12,47 @@
       <li>
         <div class="text-wrap">
           <div class="title">
-            Photos de voyage
+           <?php the_field('services_block_title_1'); ?>
           </div>
 
           <div class="subtitle">
-            Phasellus faucibus venenatis dolor.
+            <?php the_field('services_block_subtitle_1'); ?>
           </div>
 
           <div class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quidem. Eum officia quos vero alias ab temporibus fugiat minus! Repellendus, quo perferendis eaque facere doloremque nostrum similique quibusdam distinctio officia.
+            <?php the_field('services_block_description_1'); ?>
           </div>
         </div>
 
-        <div class="img-wrap">
-          <img src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/cameron-stow-243141.jpg" alt="">
-        </div>
+        <?php $services_block_image_1 = get_field('services_block_image_1'); ?>
+        <?php if ( $services_block_image_1 ) : ?>
+          <div class="img-wrap">
+            <img src="<?= esc_url($services_block_image_1['url']); ?>" 
+                 alt="<?= esc_attr($services_block_image_1['alt']); ?>" />
+            </div>
+        <?php endif; ?>
       </li>
 
       <li>
-        <div class="img-wrap">
-          <img src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/grant-ritchie-513607.jpg" alt="">
-        </div>
+        <?php $services_block_image_2 = get_field('services_block_image_2'); ?>
+        <?php if ( $services_block_image_2 ) : ?>
+          <div class="img-wrap">
+            <img src="<?= esc_url($services_block_image_2['url']); ?>" 
+                 alt="<?= esc_attr($services_block_image_2['alt']); ?>" />
+            </div>
+        <?php endif; ?>
 
         <div class="text-wrap">
           <div class="title">
-            Photos de voyage
+           <?php the_field('services_block_title_2'); ?>
           </div>
 
           <div class="subtitle">
-            Phasellus faucibus venenatis dolor.
+            <?php the_field('services_block_subtitle_2'); ?>
           </div>
 
           <div class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quidem. Eum officia quos vero alias ab temporibus fugiat minus! Repellendus, quo perferendis eaque facere doloremque nostrum similique quibusdam distinctio officia.
+            <?php the_field('services_block_description_2'); ?>
           </div>
         </div>
       </li>

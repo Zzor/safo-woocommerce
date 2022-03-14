@@ -26,9 +26,7 @@
     <header class="l-header is-generic">
       <div class="l-header__inner">
         <figure class="l-header__picture">
-          <img src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/angelo-lacancellera-471042-unsplash.jpg" 
-               alt=""
-               class="l-header__img">
+          <?php the_post_thumbnail(); ?>
 
           <div class="l-header__picture-shade"></div>
         </figure>
