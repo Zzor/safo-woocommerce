@@ -1,6 +1,6 @@
 {
     "key": "group_622f3b49c4b19",
-    "title": "Services",
+    "title": "Prestations",
     "fields": [
         {
             "key": "field_622f3b4eced3d",
@@ -202,7 +202,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "templates\/services.php"
+                "value": "templates\/prestations.php"
             }
         ]
     ],
@@ -228,5 +228,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1647262824
+    "modified": 1647264150
 }

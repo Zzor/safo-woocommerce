@@ -1,13 +1,13 @@
 <?php
   /*
-  Template Name: Services
+  Template Name: Prestations
   */
 ?>
 
 <?php get_header(); ?>
 
-<main class="t-services">
-  <div class="t-services__inner">
+<main class="t-prestations">
+  <div class="t-prestations__inner">
     <ul>
       <li>
         <div class="text-wrap">

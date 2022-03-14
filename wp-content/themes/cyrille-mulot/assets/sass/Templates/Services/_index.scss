@@ -1,7 +1,7 @@
-.t-services {
+.t-prestations {
   @extend %--principal-grid;
 
-  .t-services__inner {
+  .t-prestations__inner {
     grid-column: 2 / -2;
     @extend %--is-constrain-section;
 
