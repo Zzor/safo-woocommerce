@@ -1,6 +1,12 @@
 .logged-in {
   .l-topnav {
     top: var(--adminbar-height);
+
+    .l-topnav__principal-nav {
+      &.is-opened {
+        top: calc(var(--topbar-height) + var(--adminbar-height)) !important;
+      }
+    }
   }
 }
 
@@ -44,6 +50,16 @@
 
       @include down(1023) {
         display: none;
+
+        &.is-opened {
+          display: block;
+          position: fixed;
+          top: var(--topbar-height);
+          height: 100%;
+          width: 100%;
+          left: 0;
+          background-color: #fff;
+        }
       }
 
       .l-topnav__principal-nav-items {
