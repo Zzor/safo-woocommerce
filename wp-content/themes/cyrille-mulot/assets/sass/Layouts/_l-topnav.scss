@@ -16,6 +16,7 @@
   transition: all 250ms ease;
 
   &.is-scrolled-down {
+    box-shadow: var(--box-shadow-dark);
     background-color: var(--color-light-full) !important;
   }
 
