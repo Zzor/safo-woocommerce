@@ -1,4 +1,4 @@
-<div class="l-topnav">
+<div id="js-topbar" class="l-topnav">
   <div class="l-topnav__inner">
     <div class="l-topnav__logo">
       <a href="<?php bloginfo('url'); ?>">
