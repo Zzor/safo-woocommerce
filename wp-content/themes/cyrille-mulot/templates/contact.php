@@ -6,7 +6,7 @@ get_header();
 ?>
 <main class="t-contact">
   <section class="t-contact__inner">
-    <div class="t-contact__form-switch">
+    <div class="t-contact__form-switch fx-reveal">
       <button class="c-button-square is-colored" id="js-infos-button">
         <span>
           <?php the_field('contact_form_info_button'); ?>
@@ -20,7 +20,7 @@ get_header();
       </button>
     </div>
 
-    <div class="t-contact__form-wrapper">
+    <div class="t-contact__form-wrapper fx-reveal">
       <div class="c-form is-visible" id="js-info-form">
         <div class="c-form__description">
           <?php the_field('contact_form_info_description'); ?>
