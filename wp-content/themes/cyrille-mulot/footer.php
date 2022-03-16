@@ -74,7 +74,7 @@
 
       <div class="l-footer__bottom">
         <p class="l-footer__copyright">
-          <?= date('Y'); ?> - Cyrille Mulot - Tous droits réservés
+          <?= date('Y'); ?> - Safo - Tous droits réservés
         </p>
         <p class="l-footer__credits">
           Développé par <a href="https://hugo-salazar.com" target="_blank">Hugo Salazar</a>
