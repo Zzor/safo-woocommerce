@@ -5,10 +5,17 @@
 }
 
 body {
-  color: var(--color-dark);
+  color: var(--color-dark-medium);
   font-family: var(--font-principal);
   line-height: 32px;
   background-color: var(--color-light);
+}
+
+@for $i from 1 through 6 {
+  h#{$i},
+  a {
+    color: var(--color-dark);
+  }
 }
 
 .for-overflow-mobile {
