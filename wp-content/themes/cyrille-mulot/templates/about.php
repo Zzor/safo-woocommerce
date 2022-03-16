@@ -8,16 +8,6 @@ get_header();
 <main class="p-about">
   <div class="p-about__inner">
     <section class="p-about_whoami">
-      <div class="p-about__description">
-        <h2>
-          <?php the_field('about_me_title'); ?>
-        </h2>
-
-        <div>
-          <?php the_field('about_me_baseline'); ?>
-        </div>
-      </div>
-
       <div class="p-about__images">
         <picture>
           <?php $about_me_image_1 = get_field('about_me_image_1'); ?>
@@ -34,6 +24,16 @@ get_header();
                 alt="<?= esc_attr($about_me_image_2['alt']); ?>" />
           <?php endif; ?>
         </picture>
+      </div>
+
+      <div class="p-about__description">
+        <h2>
+          <?php the_field('about_me_title'); ?>
+        </h2>
+
+        <div>
+          <?php the_field('about_me_baseline'); ?>
+        </div>
       </div>
     </section>
 

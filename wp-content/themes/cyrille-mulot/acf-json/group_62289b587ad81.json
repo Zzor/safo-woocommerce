@@ -61,7 +61,7 @@
             "label": "Image 1",
             "name": "about_me_image_1",
             "type": "image",
-            "instructions": "",
+            "instructions": "Taille recommendée pour un design optimal: 159px de large \/ 215px de hauteur",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -401,5 +401,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1647437986
+    "modified": 1647438821
 }
