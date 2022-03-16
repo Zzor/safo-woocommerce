@@ -13,6 +13,12 @@
   @extend %--principal-grid;
   background-color: var(--color-light);
   z-index: z(navigation);
+  transition: all 250ms ease;
+
+  &.is-scrolled-down {
+    box-shadow: var(--box-shadow-dark);
+    background-color: var(--color-light-full) !important;
+  }
 
   .l-topnav__inner {
     grid-column: 2 / -2;
