@@ -10,5 +10,8 @@ function cyrilleMulot() {
  add_theme_support('wc-product-gallery-zoom');
  add_theme_support('wc-product-gallery-lightbox');
  add_theme_support('wc-product-gallery-slider');
+
+ add_image_size('image_about_small', 159, 215, true);
+ add_image_size('image_about_big', 335, 446, true);
 }
 add_action('after_setup_theme', 'cyrilleMulot');
