@@ -37,22 +37,6 @@ get_header();
       </div>
     </section>
 
-    <section class="p-about__equipment">
-      <div>
-        <h2>
-          <?php the_field('about_equipment_title'); ?>
-        </h2>
-
-        <div>
-          <?php the_field('about_equipment_baseline'); ?>
-        </div>
-      </div>
-
-      <div>
-        <?php the_field('about_equipment_description'); ?>
-      </div>
-    </section>
-
     <section class="p-about__workwithme">
       <h2>
         <?php the_field('about_shop_title'); ?>
@@ -70,6 +54,22 @@ get_header();
            <?= esc_html($about_shop_link['title']); ?>
         </a>
       <?php endif; ?>
+    </section>
+
+    <section class="p-about__equipment">
+      <div>
+        <h2>
+          <?php the_field('about_equipment_title'); ?>
+        </h2>
+
+        <div>
+          <?php the_field('about_equipment_baseline'); ?>
+        </div>
+      </div>
+
+      <div>
+        <?php the_field('about_equipment_description'); ?>
+      </div>
     </section>
 
     <section class="p-about__more-about">
