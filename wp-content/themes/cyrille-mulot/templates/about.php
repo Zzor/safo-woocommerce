@@ -13,7 +13,8 @@ get_header();
           <?php $about_me_image_1 = get_field('about_me_image_1'); ?>
           <?php if($about_me_image_1) : ?>
             <img src="<?= esc_url($about_me_image_1['url']); ?>" 
-                alt="<?= esc_attr($about_me_image_1['alt']); ?>" />
+                alt="<?= esc_attr($about_me_image_1['alt']); ?>" 
+                class="fx-reveal"/>
           <?php endif; ?>
         </picture>
 
@@ -21,28 +22,29 @@ get_header();
           <?php $about_me_image_2 = get_field('about_me_image_2'); ?>
           <?php if ($about_me_image_2) : ?>
             <img src="<?= esc_url($about_me_image_2['url']); ?>" 
-                alt="<?= esc_attr($about_me_image_2['alt']); ?>" />
+                alt="<?= esc_attr($about_me_image_2['alt']); ?>" 
+                class="fx-reveal"/>
           <?php endif; ?>
         </picture>
       </div>
 
       <div class="p-about__description">
-        <h2>
+        <h2 class="fx-reveal">
           <?php the_field('about_me_title'); ?>
         </h2>
 
-        <div>
+        <div class="fx-reveal">
           <?php the_field('about_me_baseline'); ?>
         </div>
       </div>
     </section>
 
     <section class="p-about__workwithme">
-      <h2>
+      <h2 class="fx-reveal">
         <?php the_field('about_shop_title'); ?>
       </h2>
 
-      <div class="description">
+      <div class="description fx-reveal">
         <?php the_field('about_shop_baseline'); ?>
       </div>
 
@@ -50,7 +52,7 @@ get_header();
       <?php if($about_shop_link) : ?>
         <a href="<?= esc_url($about_shop_link['url']); ?>" 
            target="<?= esc_attr($about_shop_link['target']); ?>"
-           class="c-button-square is-colored">
+           class="c-button-square is-colored fx-reveal">
            <?= esc_html($about_shop_link['title']); ?>
         </a>
       <?php endif; ?>
@@ -58,11 +60,11 @@ get_header();
 
     <section class="p-about__equipment">
       <div>
-        <h2>
+        <h2 class="fx-reveal">
           <?php the_field('about_equipment_title'); ?>
         </h2>
 
-        <div>
+        <div class="fx-reveal">
           <?php the_field('about_equipment_baseline'); ?>
         </div>
 
@@ -70,32 +72,33 @@ get_header();
           <?php $about_equipment_image = get_field('about_equipment_image'); ?>
           <?php if($about_equipment_image) : ?>
             <img src="<?= esc_url($about_equipment_image['url']); ?>" 
-                 alt="<?= esc_attr($about_equipment_image['alt']); ?>" />
+                 alt="<?= esc_attr($about_equipment_image['alt']); ?>" 
+                 class="fx-reveal"/>
           <?php endif; ?>
         </figure>
       </div>
 
-      <div class="description">
+      <div class="description fx-reveal">
         <?php the_field('about_equipment_description'); ?>
       </div>
     </section>
 
     <section class="p-about__more-about">
-      <h2>
+      <h2 class="fx-reveal">
         <?php the_field('about_more_title'); ?>
       </h2>
 
-      <div class="description">
+      <div class="description fx-reveal">
         <?php the_field('about_more_description'); ?>
       </div>
     </section>
 
     <section class="p-about__contact">
-      <h2>
+      <h2 class="fx-reveal">
         <?php the_field('about_contact_title'); ?>
       </h2>
 
-      <div class="description">
+      <div class="description fx-reveal">
         <?php the_field('about_contact_baseline'); ?>
       </div>
 
@@ -103,7 +106,7 @@ get_header();
       <?php if($about_contact_link) : ?>
         <a href="<?= esc_url($about_contact_link['url']); ?>" 
            target="<?= esc_attr($about_contact_link['target']); ?>"
-           class="c-button-square is-colored">
+           class="c-button-square is-colored fx-reveal">
            <?= esc_html($about_contact_link['title']); ?>
         </a>
       <?php endif; ?>
