@@ -65,6 +65,14 @@ get_header();
         <div>
           <?php the_field('about_equipment_baseline'); ?>
         </div>
+
+        <figure>
+          <?php $about_equipment_image = get_field('about_equipment_image'); ?>
+          <?php if($about_equipment_image) : ?>
+            <img src="<?= esc_url($about_equipment_image['url']); ?>" 
+                 alt="<?= esc_attr($about_equipment_image['alt']); ?>" />
+          <?php endif; ?>
+        </figure>
       </div>
 
       <div>

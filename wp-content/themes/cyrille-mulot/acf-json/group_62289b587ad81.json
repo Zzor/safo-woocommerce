@@ -140,6 +140,30 @@
             "maxlength": ""
         },
         {
+            "key": "field_6231f565726bc",
+            "label": "Photo",
+            "name": "about_equipment_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "1536x1536",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_6231dda85da33",
             "label": "Baseline",
             "name": "about_equipment_baseline",
@@ -401,5 +425,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1647439123
+    "modified": 1647441286
 }
