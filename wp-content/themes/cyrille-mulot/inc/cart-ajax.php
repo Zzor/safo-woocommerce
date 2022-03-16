@@ -11,7 +11,7 @@ function woocommerce_header_add_to_cart_fragment($fragments) {
 ?>
 	<a class="cart-customlocation" 
       href="<?= esc_url(wc_get_cart_url()); ?>" 
-      title="<?php _e('View your shopping cart', 'woothemes'); ?>">
+      title="<?php _e('Voir le panier', 'woothemes'); ?>">
       <?= sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), 
           $woocommerce->cart->cart_contents_count);?> – <?= $woocommerce->cart->get_cart_total(); ?>
   </a>

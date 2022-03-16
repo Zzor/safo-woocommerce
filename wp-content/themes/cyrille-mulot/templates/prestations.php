@@ -10,7 +10,7 @@
   <div class="t-prestations__inner">
     <ul>
       <li>
-        <div class="text-wrap">
+        <div class="text-wrap fx-reveal">
           <div class="title">
            <?php the_field('services_block_title_1'); ?>
           </div>
@@ -26,7 +26,7 @@
 
         <?php $services_block_image_1 = get_field('services_block_image_1'); ?>
         <?php if ( $services_block_image_1 ) : ?>
-          <div class="img-wrap">
+          <div class="img-wrap fx-reveal">
             <img src="<?= esc_url($services_block_image_1['url']); ?>" 
                  alt="<?= esc_attr($services_block_image_1['alt']); ?>" />
             </div>
@@ -36,13 +36,13 @@
       <li>
         <?php $services_block_image_2 = get_field('services_block_image_2'); ?>
         <?php if ( $services_block_image_2 ) : ?>
-          <div class="img-wrap">
+          <div class="img-wrap fx-reveal">
             <img src="<?= esc_url($services_block_image_2['url']); ?>" 
                  alt="<?= esc_attr($services_block_image_2['alt']); ?>" />
             </div>
         <?php endif; ?>
 
-        <div class="text-wrap">
+        <div class="text-wrap fx-reveal">
           <div class="title">
            <?php the_field('services_block_title_2'); ?>
           </div>
