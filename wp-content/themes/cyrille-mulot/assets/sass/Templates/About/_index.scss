@@ -1,4 +1,6 @@
 .p-about {
+  @extend %--principal-grid;
+
   .p-about__inner {
     @extend %--is-constrain-section;
     grid-column: 2 / -2;
@@ -19,6 +21,11 @@
       align-items: center;
       gap: 90px;
       padding: var(--spacing-xxl-2) 0;
+
+      @include down(767) {
+        flex-direction: column;
+        padding: var(--spacing-l) 0;
+      }
 
       .p-about__description,
       .p-about__images {
@@ -47,6 +54,11 @@
     .p-about__equipment {
       padding: var(--spacing-xxl-2) 0;
       display: flex;
+
+      @include down(767) {
+        flex-direction: column;
+        padding: var(--spacing-l) 0;
+      }
 
       > div {
         flex: 1;
