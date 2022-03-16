@@ -42,7 +42,7 @@ get_header();
         <?php the_field('about_shop_title'); ?>
       </h2>
 
-      <div>
+      <div class="description">
         <?php the_field('about_shop_baseline'); ?>
       </div>
 
@@ -75,7 +75,7 @@ get_header();
         </figure>
       </div>
 
-      <div>
+      <div class="description">
         <?php the_field('about_equipment_description'); ?>
       </div>
     </section>
@@ -85,7 +85,7 @@ get_header();
         <?php the_field('about_more_title'); ?>
       </h2>
 
-      <div>
+      <div class="description">
         <?php the_field('about_more_description'); ?>
       </div>
     </section>
@@ -95,7 +95,7 @@ get_header();
         <?php the_field('about_contact_title'); ?>
       </h2>
 
-      <div>
+      <div class="description">
         <?php the_field('about_contact_baseline'); ?>
       </div>
 

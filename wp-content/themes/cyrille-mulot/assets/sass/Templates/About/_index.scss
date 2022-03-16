@@ -5,6 +5,10 @@
     @extend %--is-constrain-section;
     grid-column: 2 / -2;
 
+    a {
+      padding: var(--spacing-s) var(--spacing-l);
+    }
+
     h2 {
       @extend %c-title-section-2;
       margin-bottom: var(--spacing-s);
@@ -14,6 +18,10 @@
       margin-top: 40px;
       margin-bottom: 18px;
       font-size: 21px;
+    }
+
+    .description {
+      padding: var(--spacing-s) 0 var(--spacing-xxl);
     }
 
     .p-about_whoami {
@@ -50,6 +58,11 @@
       }
     }
 
+    .p-about__workwithme {
+      padding: var(--spacing-xxl-2) 0;
+      text-align: center;
+    }
+
     .p-about__equipment {
       padding: var(--spacing-xxl-2) 0;
       display: flex;
@@ -84,8 +97,10 @@
       }
     }
 
-    .p-about__workwithme {
+    .p-about__more-about,
+    .p-about__contact {
       text-align: center;
+      margin: 0 auto;
     }
   }
 }
