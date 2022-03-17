@@ -1,0 +1,35 @@
+.p-about {
+  .p-about__equipment {
+    padding: var(--spacing-xxl-2) 0;
+    display: flex;
+
+    @include down(767) {
+      flex-direction: column;
+      padding: var(--spacing-l) 0;
+    }
+
+    > div {
+      flex: 1;
+
+      &:first-child {
+        @include up(767) {
+          margin-right: 90px;
+        }
+      }
+
+      figure {
+        position: relative;
+        margin-top: var(--spacing-xl);
+        width: 100%;
+        max-width: 400px;
+
+        img {
+          display: block;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

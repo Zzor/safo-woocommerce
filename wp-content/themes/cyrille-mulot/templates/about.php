@@ -8,6 +8,16 @@ get_header();
 <main class="p-about">
   <div class="p-about__inner">
     <section class="p-about_whoami">
+      <div class="p-about__description">
+        <h2 class="fx-reveal">
+          <?php the_field('about_me_title'); ?>
+        </h2>
+
+        <div class="fx-reveal">
+          <?php the_field('about_me_baseline'); ?>
+        </div>
+      </div>
+
       <div class="p-about__images">
         <picture>
           <?php $about_me_image_1 = get_field('about_me_image_1'); ?>
@@ -27,35 +37,6 @@ get_header();
           <?php endif; ?>
         </picture>
       </div>
-
-      <div class="p-about__description">
-        <h2 class="fx-reveal">
-          <?php the_field('about_me_title'); ?>
-        </h2>
-
-        <div class="fx-reveal">
-          <?php the_field('about_me_baseline'); ?>
-        </div>
-      </div>
-    </section>
-
-    <section class="p-about__workwithme">
-      <h2 class="fx-reveal">
-        <?php the_field('about_shop_title'); ?>
-      </h2>
-
-      <div class="description fx-reveal">
-        <?php the_field('about_shop_baseline'); ?>
-      </div>
-
-      <?php $about_shop_link = get_field('about_shop_link'); ?>
-      <?php if($about_shop_link) : ?>
-        <a href="<?= esc_url($about_shop_link['url']); ?>" 
-           target="<?= esc_attr($about_shop_link['target']); ?>"
-           class="c-button-square is-colored fx-reveal">
-           <?= esc_html($about_shop_link['title']); ?>
-        </a>
-      <?php endif; ?>
     </section>
 
     <section class="p-about__equipment">
@@ -80,16 +61,6 @@ get_header();
 
       <div class="description fx-reveal">
         <?php the_field('about_equipment_description'); ?>
-      </div>
-    </section>
-
-    <section class="p-about__more-about">
-      <h2 class="fx-reveal">
-        <?php the_field('about_more_title'); ?>
-      </h2>
-
-      <div class="description fx-reveal">
-        <?php the_field('about_more_description'); ?>
       </div>
     </section>
 
