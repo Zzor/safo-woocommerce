@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('shop'); ?>
 
 <main class="t-woocommerce">
   <div class="t-woocommerce__inner">
