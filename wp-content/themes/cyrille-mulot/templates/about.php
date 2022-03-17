@@ -9,11 +9,11 @@ get_header();
   <div class="p-about__inner">
     <section class="p-about_whoami">
       <div class="p-about__description">
-        <h2 class="fx-reveal">
+        <h2 class="p-about__description-title fx-reveal">
           <?php the_field('about_me_title'); ?>
         </h2>
 
-        <div class="fx-reveal">
+        <div class="p-about__description-text fx-reveal">
           <?php the_field('about_me_baseline'); ?>
         </div>
       </div>

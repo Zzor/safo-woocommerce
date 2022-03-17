@@ -241,7 +241,7 @@
             "label": "Baseline",
             "name": "about_contact_baseline",
             "type": "textarea",
-            "instructions": "",
+            "instructions": "Les sauts de ligne sont pris en compte",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -253,7 +253,7 @@
             "placeholder": "",
             "maxlength": "",
             "rows": "",
-            "new_lines": ""
+            "new_lines": "br"
         },
         {
             "key": "field_6231e7bc4f126",
@@ -302,5 +302,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1647524050
+    "modified": 1647524955
 }
