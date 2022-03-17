@@ -17,7 +17,9 @@
       }
 
       .p-about__description-text {
-        margin: var(--spacing-xxl-2) 0;
+        @include up(1024) {
+          margin: var(--spacing-xxl-2) 0;
+        }
       }
     }
 
