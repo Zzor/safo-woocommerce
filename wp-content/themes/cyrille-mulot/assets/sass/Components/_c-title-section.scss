@@ -10,6 +10,10 @@
   font-size: 40px;
   line-height: 44px;
   letter-spacing: 2.7px;
+
+  @include down(767) {
+    font-size: 32px;
+  }
 }
 
 %c-title-section-3 {

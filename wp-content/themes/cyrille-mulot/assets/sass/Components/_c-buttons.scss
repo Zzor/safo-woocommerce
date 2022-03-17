@@ -3,7 +3,7 @@
   height: 40px;
   border: 1px solid;
   box-shadow: 0 0 0 2px var(--color-light), 0 0 0 3px var(--color-dark);
-  background-color: var(--color-light-full);
+  background-color: var(--color-light);
   transition: all 250ms ease;
 
   &.is-light {

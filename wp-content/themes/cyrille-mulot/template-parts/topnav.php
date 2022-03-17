@@ -2,7 +2,7 @@
   <div class="l-topnav__inner">
     <div class="l-topnav__logo">
       <a href="<?php bloginfo('url'); ?>">
-        <img src="<?= THEME_IMG ?>/cyrille-mulot-logo.jpg" alt="Logo">
+        <img src="<?= get_theme_mod('logo'); ?>" alt="Safo Logo"/>
       </a>
     </div>
 

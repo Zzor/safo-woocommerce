@@ -2,7 +2,7 @@
 /**
  * Register Menus
  */
-function cyrilleMulotMenus() {
+function safoMenus() {
   register_nav_menus(
     [
       'principal-nav' => __('Menu principal'),
@@ -11,4 +11,4 @@ function cyrilleMulotMenus() {
     ]
   );
 }
-add_action('after_setup_theme', 'cyrilleMulotMenus');
+add_action('after_setup_theme', 'safoMenus');

@@ -1,24 +1,33 @@
+@import './contact';
+@import './equipment';
+@import './whoiam';
+
 .p-about {
-  .p-about__description {
-    font-size: 18px;
-    color: var(--color-dark-medium);
-    text-align: center;
-    line-height: 32px;
+  @extend %--principal-grid;
+  margin-bottom: var(--spacing-xxl-2);
+  padding-bottom: var(--spacing-xxl-2);
 
-    @include up(1024) {
-      width: 50%;
-      margin: 0 auto;
+  .p-about__inner {
+    @extend %--is-constrain-section;
+    grid-column: 2 / -2;
+
+    a {
+      padding: var(--spacing-s) var(--spacing-l);
     }
 
-    p {
-      padding: var(--spacing-s) 0;
+    h2 {
+      @extend %c-title-section-2;
+      margin-bottom: var(--spacing-s);
     }
-  }
 
-  .p-about__picture {
-    img {
-      display: block;
-      width: 100%;
+    h3 {
+      margin-top: 40px;
+      margin-bottom: 18px;
+      font-size: 21px;
+    }
+
+    .description {
+      padding: var(--spacing-s) 0 var(--spacing-xxl);
     }
   }
 }

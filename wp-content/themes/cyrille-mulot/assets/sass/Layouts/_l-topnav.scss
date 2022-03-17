@@ -17,7 +17,6 @@
 
   &.is-scrolled-down {
     box-shadow: var(--box-shadow-dark);
-    background-color: var(--color-light-full) !important;
   }
 
   .l-topnav__inner {
@@ -130,7 +129,7 @@
           &:last-child {
             margin-right: 0;
             padding: 0 var(--spacing-s);
-            color: var(--color-light-full);
+            color: var(--color-light);
             background-color: var(--color-dark-medium);
             transition: all 250ms ease;
 
