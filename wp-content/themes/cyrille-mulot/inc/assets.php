@@ -11,7 +11,7 @@ function loadAssets() {
     wp_dequeue_style('wp-block-library-theme');
 
     wp_enqueue_style(
-        'cyrilleMulot',
+        'safo',
         get_template_directory_uri() . '/assets/dist/main.css',
         [],
         time()
@@ -26,7 +26,7 @@ function loadAssets() {
     );
 
     wp_enqueue_script(
-        'cyrilleMulot',
+        'safo',
         get_template_directory_uri() . '/assets/dist/main.js',
         ['jquery'],
         '1.7',

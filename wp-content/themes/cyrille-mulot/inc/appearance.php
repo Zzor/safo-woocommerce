@@ -1,7 +1,7 @@
 <?php 
 
 add_action('customize_register', function (WP_Customize_Manager $manager) {
-  $manager->add_section('cyrilleMulot_appearance', [
+  $manager->add_section('safo_appearance', [
     'title' => __('Theme appearance')
   ]);
 
@@ -10,7 +10,7 @@ add_action('customize_register', function (WP_Customize_Manager $manager) {
 ]);
 
   $manager->add_control(new WP_Customize_Image_Control($manager, 'logo', [
-    'label' => __('logo', 'cyrilleMulot'),
-    'section' => 'cyrilleMulot_appearance'
+    'label' => __('logo', 'safo'),
+    'section' => 'safo_appearance'
   ]));
 });
