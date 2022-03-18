@@ -18,14 +18,18 @@
       ?>
     </nav>
 
-    <!-- Nombres d'articles + Prix dans la Topnav -->
-    <a class="cart-customlocation" 
-       href="<?= wc_get_cart_url(); ?>" 
-       title="<?php _e( 'Voir le panier' ); ?>">
-        <?= sprintf(_n('%d article', '%d articles', WC()->cart->get_cart_contents_count()), WC()->cart->get_cart_contents_count()); ?> – <?= WC()->cart->get_cart_total(); ?>
+    <!-- Panier + nombre d'articles -->
+    <a href="<?= wc_get_cart_url() ?>" class="l-topnav__cart">
+      <img src="<?= THEME_IMG ?>/cart-icon.svg" alt="Carrito" />
+      <span class="text-for-seo">Carrito</span>
+      
+      <div class="l-topnav__cart-count">
+        <?php global $woocommerce; ?>
+        <?= $woocommerce->cart->cart_contents_count; ?>
+      </div>
     </a>
 
-    <button id="js-burger" class="l-nav__burger" aria-label="menu">
+    <button id="js-burger" class=".l-topnav__burger" aria-label="menu">
       <span></span>
     </button>
   </div>
