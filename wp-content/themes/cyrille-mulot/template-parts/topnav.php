@@ -29,7 +29,7 @@
       </div>
     </a>
 
-    <button id="js-burger" class=".l-topnav__burger" aria-label="menu">
+    <button id="js-burger" class="l-topnav__burger" aria-label="menu">
       <span></span>
     </button>
   </div>

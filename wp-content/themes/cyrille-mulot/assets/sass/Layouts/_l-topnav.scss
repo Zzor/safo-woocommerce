@@ -29,6 +29,8 @@
 
     .l-topnav__logo {
       height: inherit;
+      isolation: isolate;
+      z-index: z(navigation);
 
       a {
         height: inherit;
@@ -152,6 +154,10 @@
       justify-content: center;
       border-radius: 4px;
       background-color: var(--color-primary-medium);
+
+      @include down(1024) {
+        transform: translateX(-50%);
+      }
 
       &:hover {
         color: inherit;
