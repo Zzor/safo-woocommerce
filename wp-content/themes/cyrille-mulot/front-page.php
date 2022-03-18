@@ -3,7 +3,7 @@
 <main class="p-home">
   <section class="p-home__categories">
     <div class="p-home__categories-inner">
-      <header class="text-for-seo">
+      <header class="p-home__categories-header">
         <h2>
           <?php the_field('home_categories_title'); ?>  
         </h2>

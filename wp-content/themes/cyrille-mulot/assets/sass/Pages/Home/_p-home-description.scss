@@ -4,6 +4,10 @@
     margin: 0 auto;
     text-align: center;
 
+    @include up(767) {
+      padding: var(--spacing-xxl-2) 0;
+    }
+
     @include up(1024) {
       width: 75%;
     }
