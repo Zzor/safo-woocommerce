@@ -155,13 +155,12 @@
   color: var(--color-primary-dark) !important;
 }
 
-.woocommerce-tabs {
-  h2 {
-    font-family: var(--font-title) !important;
-    font-size: 18px !important;
-    font-weight: 600 !important;
-    letter-spacing: 1px;
-  }
+.product_title.entry-title,
+.woocommerce-tabs h2 {
+  font-family: var(--font-title) !important;
+  font-size: 18px !important;
+  text-decoration: underline !important;
+  letter-spacing: 1px;
 }
 
 .woocommerce-message {
