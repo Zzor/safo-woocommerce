@@ -40,7 +40,7 @@ function safo_custom_shop_woocommmerce() {
 function esl_replace_loop_add_to_cart_button($button, $product) {
   $button_text = __("voir produit", "woocommerce");
 
-  return '<a href="' . $product->get_permalink() . '">' . $button_text . '</a>';
+  return '<a class="add-to-cart-button" href="' . $product->get_permalink() . '">' . $button_text . '</a>';
 }
 add_filter('woocommerce_loop_add_to_cart_link', 'esl_replace_loop_add_to_cart_button', 10, 2);
 

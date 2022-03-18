@@ -1,5 +1,6 @@
 // Reescritura del diseño básico de WooCommerce
 %_woocommerce-safo-button {
+  font-weight: 600 !important;
   color: var(--color-light) !important;
   border: 1px solid var(--color-dark-medium) !important;
   background-color: var(--color-dark-medium) !important;
@@ -23,6 +24,11 @@
 .woocommerce-page button.button.alt, 
 .woocommerce-page input.button.alt {
   @extend %_woocommerce-safo-button;
+}
+
+.add-to-cart-button {
+  @extend %_woocommerce-safo-button;
+  padding: var(--spacing-xs) var(--spacing-s) !important;
 }
 
 .woocommerce .checkout-button {
@@ -137,4 +143,9 @@
     background-color: var(--color-light);
     border: 1px solid var(--color-blue-medium);
   }
+}
+
+.price {
+  font-weight: 600 !important;
+  color: var(--color-dark-medium) !important;
 }
