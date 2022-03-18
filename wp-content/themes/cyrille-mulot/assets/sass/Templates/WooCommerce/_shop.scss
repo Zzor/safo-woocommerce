@@ -1,12 +1,5 @@
-.logged-in {
-  .t-woocommerce {
-    padding-top: calc(var(--topbar-height) + var(--adminbar-height));
-  }
-}
-
 .t-woocommerce {
   @extend %--principal-grid;
-  padding-top: var(--topbar-height);
 
   .t-woocommerce__inner {
     grid-column: 2 / -2;
