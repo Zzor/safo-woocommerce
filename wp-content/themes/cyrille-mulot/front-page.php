@@ -1,22 +1,6 @@
 <?php get_header('home'); ?>
 
 <main class="p-home">
-  <section id="link-home-description" class="p-home__presentation fx-reveal">
-    <div class="p-home__presentation-inner">
-      <h2>
-        <?php the_field('home_presentation_title'); ?>  
-      </h2>
-      
-      <div>
-        <?php the_field('home_presentation_description'); ?>
-      </div>
-
-      <p class="p-home__presentation-signature">
-        <?php the_field('home_presentation_signature'); ?>
-      </p>
-    </div>
-  </section>
-
   <section class="p-home__categories">
     <div class="p-home__categories-inner">
       <header class="text-for-seo">
@@ -122,6 +106,22 @@
           <?php endwhile; ?>
         <?php endif; ?>
       </ul>
+    </div>
+  </section>
+
+  <section id="link-home-description" class="p-home__presentation fx-reveal">
+    <div class="p-home__presentation-inner">
+      <h2>
+        <?php the_field('home_presentation_title'); ?>  
+      </h2>
+      
+      <div>
+        <?php the_field('home_presentation_description'); ?>
+      </div>
+
+      <p class="p-home__presentation-signature">
+        <?php the_field('home_presentation_signature'); ?>
+      </p>
     </div>
   </section>
 </main>
