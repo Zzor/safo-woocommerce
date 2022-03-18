@@ -25,6 +25,10 @@
 
     <header class="l-header-woocommmerce">
       <h1 class="l-header-woocommmerce__title fx-reveal">
-        Boutique
+        <?php if(is_shop()) : ?>
+          Boutique
+        <?php else : ?>
+          <?php the_title(); ?>
+        <?php endif; ?>
       </h1>
     </header>
