@@ -4,10 +4,5 @@
   .t-cart__inner {
     grid-column: 2 / -2;
     @extend %--is-constrain-section;
-
-    .t-card__cupon-ticket {
-      display: flex;
-      justify-content: flex-end;
-    }
   }
 }
