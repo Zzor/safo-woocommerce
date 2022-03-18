@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1fec8be776a19a28a051547ac8b6d911",
+    "content-hash": "80da131e5a6e4911661a420aeb0364cb",
     "packages": [
         {
             "name": "composer/installers",
@@ -350,6 +350,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/polylang/"
+        },
+        {
+            "name": "wpackagist-plugin/woo-variation-swatches",
+            "version": "1.1.19",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woo-variation-swatches/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woo-variation-swatches.zip?timestamp=1631017802"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woo-variation-swatches/"
         },
         {
             "name": "wpackagist-plugin/woocommerce",
