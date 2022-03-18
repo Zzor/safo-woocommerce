@@ -12,4 +12,4 @@
   </div>
 </main>
 
-<?php get_footer('woocommerce'); ?>
+<?php get_footer(); ?>
