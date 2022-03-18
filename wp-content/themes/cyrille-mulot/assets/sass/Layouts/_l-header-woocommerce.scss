@@ -17,3 +17,9 @@
     transform: translateY(-25%);
   }
 }
+
+.l-header-woocommerce__product {
+  display: block;
+  margin-top: calc(var(--topbar-height) + var(--adminbar-height));
+  padding: var(--spacing-xxl);
+}

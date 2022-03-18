@@ -23,12 +23,21 @@
 
     <?php get_template_part('template-parts/topnav'); ?>
 
-    <header class="l-header-woocommmerce">
-      <h1 class="l-header-woocommmerce__title fx-reveal">
-        <?php if(is_shop()) : ?>
+    <?php if(is_shop()) : ?>
+      <header class="l-header-woocommmerce">
+        <h1 class="l-header-woocommmerce__title fx-reveal">
           Boutique
-        <?php else : ?>
+        </h1>
+      </header>
+    <?php elseif(!is_product()) : ?>
+      <header class="l-header-woocommmerce">
+        <h1 class="l-header-woocommmerce__title fx-reveal">
           <?php the_title(); ?>
-        <?php endif; ?>
-      </h1>
-    </header>
+        </h1>
+      </header>
+
+    <?php else : ?>
+      <span class="l-header-woocommerce__product"></span>
+    <?php endif; ?>
+
+    
