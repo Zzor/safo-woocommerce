@@ -22,19 +22,3 @@
     <div class="for-overflow-mobile">
 
     <?php get_template_part('template-parts/topnav'); ?>
-
-    <header class="l-header is-generic">
-      <div class="l-header__inner">
-        <figure class="l-header__picture">
-          <?php the_post_thumbnail(); ?>
-
-          <div class="l-header__picture-shade"></div>
-        </figure>
-
-        <div class="c-title-page l-header__title">
-          <h1 class="c-title-page__principal fx-reveal">
-            <?php single_post_title() ?>
-          </h1>
-        </div>
-      </div>
-    </header>
