@@ -4,7 +4,7 @@
   */
 ?>
 
-<?php get_header(); ?>
+<?php get_header('shop'); ?>
 
 <main class="t-cart">
   <div class="t-cart__inner">
