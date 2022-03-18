@@ -149,3 +149,21 @@
   font-weight: 600 !important;
   color: var(--color-dark-medium) !important;
 }
+
+.stock {
+  font-weight: 600 !important;
+  color: var(--color-primary-dark) !important;
+}
+
+.woocommerce-tabs {
+  h2 {
+    font-family: var(--font-title) !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    letter-spacing: 1px;
+  }
+}
+
+.woocommerce-message {
+  border-top-color: var(--color-primary-light) !important;
+}
