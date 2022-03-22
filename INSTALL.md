@@ -77,3 +77,4 @@ Para generarlos (ya que no están versionados), este es el script que tienes que
 `composer build-assets`.
 
 Listo, ya tienes instalado este Custom WordPress de base, y lo podrás versionar facilmente !
+Vé a tu Dashboard WordPress para rellenar contenidos (no olvides sincronizar los Advanced Custom Fields)
