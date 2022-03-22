@@ -26,6 +26,11 @@ composer install
 - Modificar "author"
 - Modificar "email"
 - Modificar "scripts" con el nombre de la plantilla que se va a usar
+  ```
+    "scripts": {
+        "build-assets":  "cd wp-content/themes/safo/assets && parcel build main.js --no-minify --public-url=./"
+    }
+  ```
 
 # 4. Preparar la configuración WordPress
 - Copiar el archivo `wp-config-sample.php` y nombrar la copia `wp-config.php`
