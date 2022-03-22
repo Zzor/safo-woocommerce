@@ -1,5 +1,5 @@
 {
-    "name": "zzor/cyrille-mulot",
+    "name": "zzor/safo-photography",
     "authors": [
         {
             "name": "Zzor",
@@ -23,5 +23,8 @@
             "url":"https://wpackagist.org",
             "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
         }
-    ]
+    ],
+    "scripts": {
+        "build-assets":  "cd wp-content/themes/safo/assets && parcel build main.js --no-minify --public-url=./"
+    }
 }
