@@ -1,108 +1,79 @@
-# Installation custom de WordPress
+# Instalación WordPress Custom
 
-## procédure d'installation : 
+Esta instalación WordPress está hecha con:
+- johnpbloch/wordpress
+- Composer
+- Parcel JS
+- wp-cli
+- Wpackagist
 
-1. initialiser le projet composer : `composer init` => On valide avec entrée tout du long sauf pour les questions :
+
+## 1. Clonar el proyecto y renombrar el nombre del proyecto
 ```
-Would you like to define your dependencies (require) interactively [yes]? no
-Would you like to define your dev dependencies (require-dev) interactively [yes]? no
-```
-ce `composer init` crée notre fichier `composer.json`.
-
-2. 
-
-On demande à composer d'installer le code de WordPress dans un répertoire `wp` (pas obligatoire) : 
-
-_dans composer.json :_
-```
-"extra": {
-        "wordpress-install-dir": "wp"
-},
-```
-On définit une option dans le fichier composer.json pour gérer (si on veut le faire) le nom du dossier dans lequel on installera WordPress
-
-Installer le package _johnpbloch/wordpress_ : `composer require johnpbloch/wordpress`
-
-:warning:  **gitignore** : Il ne faut pas oublier d'ajouter au .gitignore (ou de le créer) :
-
-```
-/vendor
-/wp
+git clone https://github.com/Zzor/wordpress-custom-install.git
 ```
 
-3. On récupère index.php et wp-config-sample.php depuis les fichiers de WordPress (installé dans le répertoire `wp `) et on place ces copies à la racine du projet. L'intérêt est de forcer WP à se servir de notre propre fichier de configuration. Il faut adapter le chemin du require présent dans index.php : `require __DIR__ . '/wp/wp-blog-header.php';`
+## 2. Recuperar las dependencias
 
-:warning:  **gitignore** : Il ne faut pas oublier d'ajouter `wp-config.php` au .gitignore. On conservera un `wp-config-sample.php` pour le partage.
-
-4. On ajoute nos identifiants de base de données dans une **copie** du fichier `wp-config-sample.php` que l'on nomme `wp-config.php`. On y génère aussi les clés de hashage en suivant le lien : https://api.wordpress.org/secret-key/1.1/salt/
-
-On a maintenant accès à un formulaire nous permettant d'installer WP (on ne va pas l'utiliser)
-
-5. Config custom :
-
-on ajoute des constantes à notre wp-config ; 
+Las dependencias están gestionadas con Composer, para descargarlas:
 
 ```
-// Je définis l'URL vers la page d'accueil de mon site
-define(
-    'WP_HOME',
-    rtrim ( 'put_your_home_url_here', '/' )
-);
-
-// Je définis l'URL vers le dossier source de WordPress
-define(
-    'WP_SITEURL',
-    WP_HOME . '/wp'
-);
-
-// Je définis l'URL vers le dossier wp-content
-define(
-    'WP_CONTENT_URL',
-    WP_HOME . '/wp-content'
-);
-
-// Je définis le path (chemin côté serveur) vers le dossier wp-content
-define(
-    'WP_CONTENT_DIR',
-    __DIR__ . '/wp-content'
-);
+composer install
 ```
 
-6. Installation de WP
+## 3. Modificar el composer.json
+- Modificar "name"
+- Modificar "author"
+- Modificar "email"
+- Modificar "scripts" con el nombre de la plantilla que se va a usar
 
-On utilise WP-CLI pour installer WP en LDC :
+# 4. Preparar la configuración WordPress
+- Copiar el archivo `wp-config-sample.php` y nombrar la copia `wp-config.php`
+- En el archivo `wp-config.php`:
+  - Insertar los datos de la Base de Datos (DB_NAME, DB_USER y DB_PASSWORD)
+  - Generar los salts (https://api.wordpress.org/secret-key/1.1/salt/)
+  - Definir la URL hacia la página de inicio de WordPress en local
+    - En `WP_HOME`, reemplazar `put_your_home_url_here` por tu URL (ejemplo: `http://localhost:8000/wordpress-custom-install`)
 
-`wp core install --prompt` => démarrer l'installation en mode interactif
-La commande nous demande des infos :
+# 5. Instalar WordPress con wp-cli
+
+`wp core install --prompt` 
+
 ```
-1/6 --url=<url>:[mettre la même url que dans la constante WP_HOME plus haut]
+1/6 --url=<url>:[poner la misma URL que se insertó anteriormente en WP_HOME]
 2/6 --title=<site-title>: Demo WP
-3/6 --admin_user=<username>: demowp_admin
-4/6 [--admin_password=<password>]: demowp
-5/6 --admin_email=<email>: hey@truc.com
-6/6 [--skip-email] (Y/n): <= On appuie direct sur entrée pour valider le Y par défaut
+3/6 --admin_user=<username>: admin
+4/6 [--admin_password=<password>]: password
+5/6 --admin_email=<email>: say@hello.com
+6/6 [--skip-email] (Y/n): <= Le damos a entrar directamente para validar el Y por defecto
 ```
 
-Si succès on aura la réponse :
+# 6. Instalación completada
+
+- Si la instalación ha funcionado, aparecerá el siguiente mensaje:
 `Success: WordPress installed successfully.`
 
-7. On utilise wpackagist avec Composer pour récupérer des thèmes et des plugin : 
+- Ahora puedes ir a `http://localhost:8000/wordpress-custom-install/wp/wp-login.php` para conectarte a tu WordPress
 
-_dans composer.json_ :
-```
-"repositories":[
-        {
-            "type":"composer",
-            "url":"https://wpackagist.org",
-            "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
-        }
-    ]
-```
+# 7. Plugins y/o Temas
+Para ver los temas y plugins del proyecto y saber cuales están activados tienes 2 opciones:
+- Conectandote al Dashboard de tu WordPress
+- Verificarlo en línea de comandos
+  - Temas: `wp theme list`
+  - Plugins: `wp plugin list`
+  
 
-Par exemple, pour installer un thème : `composer require wpackagist-theme/twentytwenty`   
-Pour installer un plugin : `composer require wpackagist-plugin/akismet`
+Tienes 2 opciones:
+- Activarlos de manera clásica desde el Dashboard de WordPress
+- Activarlos en línea de comandos (es la que utilizo yo):
+  - Tema: `wp theme activate nombreDelTema`
+  - Plugin: `wp plugin activate nombreDelPlugin`
+  - Si deseas activar todos los plugins de golpe `wp plugin activate --all`
 
-Attention, quand on installer un plugin, il faut l'activer (et on le fait avec wp-cli) :
-`wp plugin activate [nomduplugin]`
 
-:warning: **gitignore** : On ne doit pas versionner le code des plugins ou des thèmes qui ne sont pas spécifiques au projet
+# 8. Parcel JS : assets Css y Javascript
+Los assets en esta configuración son generados por Parcel JS.
+Para generarlos (ya que no están versionados), este es el script que tienes que escribir en línea de comandos:
+`composer build-assets`.
+
+Listo, ya tienes instalado este Custom WordPress de base, y lo podrás versionar facilmente !
