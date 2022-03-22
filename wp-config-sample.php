@@ -67,6 +67,30 @@ define( 'NONCE_SALT',       'put your unique phrase here' );
  */
 $table_prefix = 'wp_';
 
+// Defino la URL hacia la página de inicio de mi Web
+define(
+	'WP_HOME',
+	rtrim ( 'put_your_home_url_here', '/' )
+);
+
+// Defino la URL hacia la carpeta raíz de WordPress
+define(
+	'WP_SITEURL',
+	WP_HOME . '/wp'
+);
+
+// Defino la URL hacia la carpeta wp-content
+define(
+	'WP_CONTENT_URL',
+	WP_HOME . '/wp-content'
+);
+
+// Defino el path (del lado servidor) hacia la carpeta wp-content
+define(
+	'WP_CONTENT_DIR',
+	__DIR__ . '/wp-content'
+);
+
 /**
  * For developers: WordPress debugging mode.
  *
