@@ -1,0 +1,32 @@
+.c-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
+
+  a {
+    transition: .3s;
+
+    &:hover {
+      color: var(--color-primary-dark);
+    }
+  }
+}
+
+.page-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: var(--spacing-s);
+  border: 1px solid;
+  box-shadow: 0 0 0 2px var(--color-light), 0 0 0 3px var(--color-dark);
+}
+.page-numbers.prev {
+  transform: rotate(180deg);
+}
+.page-numbers.current {
+  background: var(--color-primary-dark);
+  color: var(--color-dark);
+}

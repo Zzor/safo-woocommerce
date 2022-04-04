@@ -1,0 +1,105 @@
+.c-card-post {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  &.is-news {
+    .c-card-post__header {
+      height: 210px;
+    }
+
+    .c-card-post__content {
+      .c-card-post__title {
+        font-size: 18px;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  &:hover {
+    .c-card-post__header {
+      opacity: 1;
+
+      .c-card-post__image-wrapper {
+        img {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  .c-card-post__header {
+    position: relative;
+    display: block;
+    height: 360px;
+    background-color: var(--color-light);
+    opacity: 0.85;
+    overflow: hidden;
+    transition: opacity 500ms ease;
+
+    @include up(1024) {
+      height: 415px;
+    }
+
+    .c-card-post__image-wrapper {
+      position: relative;
+      display: block;
+      height: inherit;
+
+      &::before {
+        content: "Foto no disponible";
+        display: block;
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-primary-light);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1);
+        transition: transform 200ms ease-in-out;
+      }
+    }
+  }
+
+  .c-card-post__content {
+    flex: 1;
+    display: block;
+    padding: var(--spacing-l) 0;
+    margin-top: 5px;
+    transition: all 250ms ease;
+    text-align: center;
+
+    .c-card-post__title {
+      font-size: 24px;
+      line-height: normal;
+      font-weight: 300;
+      color: var(--color-blue-dark);
+      font-family: var(--font-blog-title);
+    }
+
+    .c-card-post__excerpt {
+      padding-top: var(--spacing-xs);
+      opacity: 0.7;
+    }
+
+    .c-card-post__author {
+      padding: var(--spacing-s) 0;
+      font-size: 14px;
+      opacity: 0.8;
+      font-family: var(--font-blog-title);
+    }
+
+    .c-card-post__cta {
+      display: inline-flex;
+      margin-top: var(--spacing-l);
+    }
+  }
+}

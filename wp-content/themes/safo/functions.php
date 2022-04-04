@@ -6,4 +6,5 @@ require __DIR__ . '/inc/constants.php';
 require __DIR__ . '/inc/images.php';
 require __DIR__ . '/inc/menus.php';
 require __DIR__ . '/inc/supports.php';
+require __DIR__ . '/inc/pagination.php';
 require __DIR__ . '/inc/cart-ajax.php';
