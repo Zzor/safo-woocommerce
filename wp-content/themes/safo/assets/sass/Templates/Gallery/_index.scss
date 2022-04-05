@@ -1,0 +1,55 @@
+.t-gallery {
+  @extend %--principal-grid;
+  margin-bottom: var(--spacing-xxl-2);
+  padding-bottom: var(--spacing-xxl-2);
+
+  .t-gallery__inner {
+    @extend %--is-constrain-section;
+    grid-column: 2 / -2;
+
+    h2 {
+      @extend %c-title-section-2;
+      margin-bottom: var(--spacing-xl);
+    }
+
+    .wp-block-gallery {
+      column-count: 1;
+      column-gap: var(--spacing-l);
+
+      @include up(700) {
+        column-count: 2;
+      }
+
+      .wp-block-image {
+        position: relative;
+        margin-bottom: var(--spacing-l);
+
+        figcaption {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          padding: var(--spacing-xxs) var(--spacing-xs);
+          line-height: 1.4;
+          color: var(--color-light);
+          background-color: rgba(black, 0.7);
+          font-size: 12px;
+          font-style: italic;
+        }
+
+        img {
+          display: block;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .wp-block-button {
+      @extend .c-button-square, .is-colored;
+      margin: var(--spacing-xxl-2) auto;
+      padding: 0 var(--spacing-l);
+    }
+  }
+}
