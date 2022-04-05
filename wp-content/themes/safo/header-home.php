@@ -45,9 +45,5 @@
           <?php the_field('home_hero_subtitle'); ?>
         </p>
       </div>
-
-      <a href="#link-home-description" class="c-button-square is-colored l-header__scroll-down">
-        <img src="<?= THEME_IMG ?>/arrow-down.svg" alt="">
-      </a>
     </div>
   </header>
