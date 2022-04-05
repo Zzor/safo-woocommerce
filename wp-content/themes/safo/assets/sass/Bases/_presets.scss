@@ -4,6 +4,10 @@
   background-color: var(--color-primary-dark);
 }
 
+img {
+  pointer-events: none;
+}
+
 body {
   color: var(--color-dark);
   font-family: var(--font-principal);
