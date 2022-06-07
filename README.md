@@ -83,3 +83,18 @@ Para generarlos (ya que no están versionados), este es el script que tienes que
 
 Listo, ya tienes instalado este Custom WordPress de base, y lo podrás versionar facilmente !
 Vé a tu Dashboard WordPress para rellenar contenidos (no olvides sincronizar los Advanced Custom Fields)
+
+## 9. Lenguages
+- Esta página esta hecha con:
+  - PHP
+  - jQuery 3.6.0
+  - SASS (scss)
+
+## 10. Plugins
+- Advanced Custom Fields
+- Contact Form 7
+- Socials Editor (plugin personal)
+- Variaition Swatches for WooCommerce
+- WooCommerce
+- Yoast SEO
+- Active Campaign
